@@ -6,7 +6,7 @@ public:
     string t = "", result;
     int space = 0;
     for(int i = 0; i <= sentence.size(); i++){
-        if (isspace(sentence[i]) || sentence[i] == '\0'){
+        if (isspace(sentence[i]) || sentence[i] == '\0') {
             space++;
 
             if(t[0] == 'a' || t[0] == 'A' ||
@@ -20,7 +20,7 @@ public:
                     t += "a";
                     tempSpace--;
                 }
-                if (space != 1){
+                if (space != 1) {
                     result += " " +  t;
                 } else result += t;
 
@@ -28,7 +28,7 @@ public:
                 string temp;
                 char firstValue;
 
-                for(int j = 0; j < t.size(); j++){
+                for(int j = 0; j < t.size(); j++) {
                     if (j == 0){
                         firstValue = t[j];
                     }else{
@@ -38,7 +38,7 @@ public:
                 temp.push_back(firstValue);
                 temp += "ma";
                 int tempSpace = space;
-                while(tempSpace){
+                while(tempSpace) {
                     temp += "a";
                     tempSpace--;
                 }
