@@ -1,15 +1,32 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
 
-    string number = "1-23-45 6", n, result;
-    for(auto i : number){
-        if (isspace(i) || i == '-') continue;
-        else n.push_back(i);
+   string ans="";
+    string s="";
+    for(auto x:number){
+        if(x==' '|| x=='-'){
+            continue;
+        }
+        else{
+            s+=x;
+        }
     }
-
-    cout << n.size() << " : " << n << endl;
-    n.erase(n.begin());
-    cout << n.size() << " : " << n << endl;
-    return 0;
-}
+    int i=0;
+    int k=s.length()/3;
+    if(s.length()%3==1){
+        k--;
+    }
+    while(k!=0){
+        ans=ans+s[i]+s[i+1]+s[i+2];
+        i=i+3;
+        if(i!=s.length()){
+            ans+='-';
+        }
+        k--;
+    }
+    while(i<s.length()){
+        ans=ans+s[i]+s[i+1];
+        i=i+2;
+        if(i!=s.length()){
+            ans+='-';
+        }
+    }
+    return ans;
