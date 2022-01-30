@@ -1,29 +1,13 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    string s = "011000111";
-    int n, ones = 1, zeros = 1;
-    n = s.size();
-
-    for(int i = 1; i <= n; i++){
-        if (n <= 1){
-            if(s[0] == '1'){
-                ones++;
-            } else{
-                zeros++;
-            }
-        } else{
-            if(s[i-1] == s[i]){
-                if(s[i] == '1'){
-                    ones++;
-                } else{
-                    zeros++;
-                }
-            }
+    int n, ones = 0, maxOnes = 0, zeros = 0, maxZeros = 0;
+    for(int i = 0; i < s.size(); i++){
+        if(s[i] == '1'){
+            zeros = 0;
+            ones++;
+            maxOnes = max(maxOnes, ones);
+        }else{
+            ones = 0;
+            zeros++;
+            maxZeros = max(maxZeros, zeros);
         }
     }
-    cout << "ONES : " << ones << "   " << "ZEROS : " << zeros << endl;
-    ones > zeros ? cout<< "true" : cout<<"false";
-    return 0;
-}
+    return maxOnes > maxZeros ? true : false;
