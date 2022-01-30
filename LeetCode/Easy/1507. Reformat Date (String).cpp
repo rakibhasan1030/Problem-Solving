@@ -2,11 +2,8 @@
 using namespace std;
 int main()
 {
-    string date = "20th Oct 2052", temp, s;
+    string date = "20th Oct 2052", temp, _day, _month, _year;
     int n = 0;
-
-
-    //{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}
     map<string, string>::iterator itr;
     map<string, string> month;
     month.insert(pair<string, string>("Jan", "01"));
@@ -22,38 +19,36 @@ int main()
     month.insert(pair<string, string>("Nov", "11"));
     month.insert(pair<string, string>("Dec", "12"));
 
-
     for (int i = 0 ; i <= date.size(); i++)
     {
         temp += date[i];
         if(date[i] == ' ' || date[i] == '\0')
         {
             ++n;
+            temp.pop_back(); // remove extra space from month name
+
             if (n == 1)
             {
-                temp.pop_back(); // remove extra space from month name
                 temp.pop_back();
                 temp.pop_back();
-                s += temp;
+                _day = temp;
             }
             else if (n == 2)
             {
-                temp.pop_back(); // remove extra space from month name
                 for (itr = month.begin(); itr != month.end(); ++itr)
                 {
                     if(itr -> first == temp){
-                        s += "-" + itr -> second + "-";
+                        _month = "-" + itr -> second + "-";
                     }
                 }
             }
             else
             {
-                temp.pop_back();
-                s += temp;
+                _year = temp;
             }
             temp = "";
         }
     }
-    cout << s << endl;
+    cout << _year+_month+_day << '\n';
     return 0;
 }
