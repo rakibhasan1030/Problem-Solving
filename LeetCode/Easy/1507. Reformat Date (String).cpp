@@ -1,8 +1,4 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    string date = "20th Oct 2052", temp, _day, _month, _year;
+    string temp, _day, _month, _year, ans;
     int n = 0;
     map<string, string>::iterator itr;
     map<string, string> month;
@@ -49,6 +45,5 @@ int main()
             temp = "";
         }
     }
-    cout << _year+_month+_day << '\n';
-    return 0;
-}
+    ans = _day.size() > 1 ? _year + _month + _day : _year + _month + "0" + _day;
+    return ans;
