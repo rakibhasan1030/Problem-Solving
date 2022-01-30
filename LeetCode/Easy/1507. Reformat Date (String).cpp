@@ -34,7 +34,7 @@ int main()
                 temp.pop_back(); // remove extra space from month name
                 temp.pop_back();
                 temp.pop_back();
-                s += temp + "-";
+                s += temp;
             }
             else if (n == 2)
             {
@@ -42,7 +42,7 @@ int main()
                 for (itr = month.begin(); itr != month.end(); ++itr)
                 {
                     if(itr -> first == temp){
-                        s += itr -> second + "-";
+                        s += "-" + itr -> second + "-";
                     }
                 }
             }
@@ -54,8 +54,6 @@ int main()
             temp = "";
         }
     }
-
-
     cout << s << endl;
     return 0;
 }
