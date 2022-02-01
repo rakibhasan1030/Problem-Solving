@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "a0b1c2", ch, digits;
-    int maxSize = 0, chSize, digitsSize;
+    string s = "a0b1c2", ch, digits, ans;
+    int diffSize, chSize, digitsSize;
     for(auto i : s){
         if (isdigit(i)){
             ch.push_back(i);
@@ -12,7 +12,23 @@ int main(){
     }
     chSize = ch.size();
     digitsSize = digits.size();
-    maxSize = chSize > digitsSize ? maxSize = chSize : maxSize = digitsSize;
-    cout << ch << " : " << digits << "   |   " << maxSize;
+    diffSize = ch.size() - digits.size();
+
+    if(diffSize == -1 || diffSize == 0 ||diffSize == 1){
+
+        for (int j = 0; j < s.size(); j++){
+            if(j <= chSize){
+                ans.push_back(ch[j]);
+            }
+
+            if(j <= digitsSize){
+                ans.push_back(digits[j]);
+            }
+        }
+    }else {
+        ans = "";
+    }
+
+    cout<< ans;
     return 0;
 }
