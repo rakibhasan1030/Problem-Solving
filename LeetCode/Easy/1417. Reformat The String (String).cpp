@@ -1,34 +1,32 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "a0b1c2", ch, digits, ans;
+    string s = "covid2019", ch, digits, ans;
     int diffSize, chSize, digitsSize;
     for(auto i : s){
-        if (isdigit(i)){
-            ch.push_back(i);
-        }else{
+        if (isdigit(i) && i != '\0'){
             digits.push_back(i);
+        }else if (!isdigit(i) && i != '\0'){
+            ch.push_back(i);
         }
     }
     chSize = ch.size();
     digitsSize = digits.size();
     diffSize = ch.size() - digits.size();
-
+    cout<< chSize << "   :   " << digitsSize << endl;
     if(diffSize == -1 || diffSize == 0 ||diffSize == 1){
 
         for (int j = 0; j < s.size(); j++){
-            if(j <= chSize){
+            if(j <= chSize && ch[j] != '\0'){
                 ans.push_back(ch[j]);
             }
-
-            if(j <= digitsSize){
+            if(j <= digitsSize && ch[j] != '\0'){
                 ans.push_back(digits[j]);
             }
         }
     }else {
         ans = "";
     }
-    ans.pop_back();
     cout<< ans;
     return 0;
 }
