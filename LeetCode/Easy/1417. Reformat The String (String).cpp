@@ -28,7 +28,7 @@ int main(){
     }else {
         ans = "";
     }
-
+    ans.pop_back();
     cout<< ans;
     return 0;
 }
