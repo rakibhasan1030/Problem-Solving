@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n = 987, nSize;
+    int n = 1987, nSize;
     string ans, s = "";
     s = to_string(n);
     nSize = s.size();
@@ -13,10 +13,6 @@ int main(){
             cout << s[i] << endl;
         }
     }
-
-
-
-
     cout << ans << endl;
     return 0;
 }
