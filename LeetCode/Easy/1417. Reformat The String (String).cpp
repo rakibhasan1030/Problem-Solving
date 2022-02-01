@@ -1,8 +1,8 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    string s = "j", ch, digits, ans;
-    int diffSize = 0, chSize = 0, digitsSize = 0;
+class Solution {
+public:
+    string reformat(string s) {
+    string ch, digits, ans;
+    int diffSize, chSize, digitsSize;
     for(auto i : s){
         if (isdigit(i) && i != '\0'){
             digits += i;
@@ -13,15 +13,13 @@ int main(){
     chSize = ch.size();
     digitsSize = digits.size();
     diffSize = ch.size() - digits.size();
-    cout<< chSize << " - " << digitsSize << " = " <<diffSize << endl;
-
+    cout<< chSize << "   :   " << digitsSize << endl;
     if(diffSize == -1 || diffSize == 0 ||diffSize == 1){
 
         for (int j = 0; j < s.size(); j++){
 
             if (chSize > digitsSize){
                 if(j <= chSize){
-
                     ans += ch[j];
                 }
                 if(j <= digitsSize){
@@ -48,6 +46,6 @@ int main(){
             ans.pop_back();
         }
     }
-    cout<< ans.size()<< " : " << ans;
-    return 0;
-}
+    return ans;
+    }
+};
