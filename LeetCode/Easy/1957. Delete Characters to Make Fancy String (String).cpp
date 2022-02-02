@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "leeetcode"; //"aabaabaabaa"
+    string s = "aabaabaabaa"; //"aabaabaabaa"
     int i = 1, c = 1;
 
     for(i; i <= s.size(); i++){
