@@ -1,16 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "leeetcode";
+    string s = "aabaabaabaa"; //"aabaabaabaa"
     int i = 1, c = 1;
 
     for(i; i <= s.size(); i++){
         if(s[i-1] == s[i]){
             c++;
             if(c > 2){
-                s.erase(i-1, i);
+                s.erase(i, 1);
             }
-            //cout<< s[i] <<endl;
         }
 
     }
