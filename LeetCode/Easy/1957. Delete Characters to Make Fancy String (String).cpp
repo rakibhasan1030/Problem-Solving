@@ -8,8 +8,11 @@ int main(){
         if(s[i-1] == s[i]){
             c++;
             if(c > 2){
-                cout<< c << endl;
+                cout << endl;
+                cout << endl;
+                cout<< "c = " << c << "   " << "s = " << s << "   " << "i = " << i << endl;
                 s.erase(i, 1);
+                cout<< "c = " << c << "   " << "s = " << s << "   " << "i = " << i << endl;
             }
         }
     }
