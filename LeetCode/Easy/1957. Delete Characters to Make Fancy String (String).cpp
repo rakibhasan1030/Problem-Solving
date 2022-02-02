@@ -8,7 +8,9 @@ int main(){
         if(s[i-1] == s[i]){
             c++;
             if(c > 2){
+                cout<< c << endl;
                 s.erase(i, 1);
+                c = 0;
             }
         }
 
