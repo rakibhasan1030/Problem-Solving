@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "aabaabaabaa"; //"aabaabaabaa"
+    string s = "leeetcode"; //"aabaabaabaa"
     int i = 1, c = 1;
 
     for(i; i <= s.size(); i++){
@@ -10,10 +10,8 @@ int main(){
             if(c > 2){
                 cout<< c << endl;
                 s.erase(i, 1);
-                c = 0;
             }
         }
-
     }
     cout<< s << endl;
     return 0;
