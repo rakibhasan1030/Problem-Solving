@@ -3,16 +3,14 @@ using namespace std;
 int main(){
     string s = "aaaaaabaabaabaa"; //"aabaabaabaa"
     int i = 1, c = 1;
-
     for(i; i <= s.size(); i++){
+        cout<< s[i-1] << " == "<< s[i] << endl;
         if(s[i-1] == s[i]){
             c++;
+            cout<< c << endl;
             if(c > 2){
-                cout << endl;
-                cout << endl;
-                cout<< "c = " << c << "   " << "s = " << s << "   " << "i = " << i << endl;
                 s.erase(i, 1);
-                cout<< "c = " << c << "   " << "s = " << s << "   " << "i = " << i << endl;
+                //c = 1;
             }
         }
     }
