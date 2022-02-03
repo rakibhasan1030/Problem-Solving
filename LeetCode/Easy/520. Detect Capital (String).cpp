@@ -1,10 +1,9 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-
-    string word = "FlaG";
+class Solution {
+public:
+    bool detectCapitalUse(string word) {
     int n, upper = 0, lower = 0;
     n = word.size();
+    bool ans;
     for (int i = 0; i< n; i++){
             if(isupper(word[i])){
                 upper++;
@@ -13,13 +12,14 @@ int main(){
             }
     }
     if (upper == n || lower == n){
-        cout<< "true";
+         ans = true;
     }else {
         if (upper == 1 && isupper(word[0])){
-            cout << "true";
+            ans = true;
         }else{
-            cout << "false";
+            ans = false;
         }
     }
-    return 0;
-}
+    return ans;
+    }
+};
