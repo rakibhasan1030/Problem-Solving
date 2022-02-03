@@ -1,19 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "aaaaaabaabaabaa"; //"aabaabaabaa"
-    int i = 1, c = 1;
-    for(i; i <= s.size(); i++){
-        cout<< s[i-1] << " == "<< s[i] << endl;
-        if(s[i-1] == s[i]){
-            c++;
-            cout<< c << endl;
-            if(c > 2){
-                s.erase(i, 1);
-                //c = 1;
+    string s = "aaaaaabaabaabaa", ans; //"aabaabaabaa"
+    int i = 0, j = 0;
+    for(i; i < s.size(); i++){
+        if(i < 2){
+            ans += s[i]; //aa
+            j++; //1 [0,1,2]
+            cout << "IF ----- " << "j = " << j << "   " << "ans = " << ans << "   " << "i = " << i << endl;
+        }else{
+            if((ans[j-1] != s[i]) || (ans[j-2] != s[i])){
+                ans += s[i];
+                j++;
+                cout << "ELSE ----- "  << "j = " << j << "   " << "ans = " << ans << "   " << "i = " << i << endl;
             }
         }
     }
-    cout<< s << endl;
+    cout<< ans << endl;
     return 0;
 }
