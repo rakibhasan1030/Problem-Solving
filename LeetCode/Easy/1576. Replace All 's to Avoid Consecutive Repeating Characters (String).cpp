@@ -9,9 +9,13 @@ int main(){
         ans += 'a';
     } else{
         for (int i = 0; i < n; i++){
+            char c = s[i];
+            if(c == '?'){
+                for (int j = i+1; j < n; j++){
+                    if (s[j] != '?'){
 
-            if(s[i] == '?'){
-
+                    }
+                }
             } else{
                 ans += s[i];
             }
