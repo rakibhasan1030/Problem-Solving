@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string  s = "???c???", ans;
+    string  s = "???z???", ans;
     int n = s.size();
     if (n <= 1 && s[i] != '?'){
         ans += s[i];
@@ -13,6 +13,8 @@ int main(){
             if(c == '?'){
                 for (int j = i+1; j < n; j++){
                     if (s[j] != '?'){
+
+
 
                     }
                 }
