@@ -14,6 +14,7 @@ int main(){
                 for (int j = i+1; j < n; j++){
                     if (s[j] != '?'){
                         if(s[j] == 'z'){
+                            char ch = char((int)s[j] - 1);
 
                         }else if (s[j] == 'a'){
 
