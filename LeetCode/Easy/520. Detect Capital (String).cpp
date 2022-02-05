@@ -2,8 +2,9 @@ class Solution {
 public:
     bool detectCapitalUse(string word) {
     int n, upper = 0, lower = 0;
-    n = word.size();
     bool ans;
+    n = word.size();
+
     for (int i = 0; i< n; i++){
             if(isupper(word[i])){
                 upper++;
@@ -21,5 +22,5 @@ public:
         }
     }
     return ans;
-    }
+  }
 };
