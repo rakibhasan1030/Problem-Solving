@@ -2,22 +2,33 @@
 using namespace std;
 int main(){
     string  s = "???z???", ans;
-    int n = s.size();
+    int n = s.size(), i = 0, j = 0;
     if (n <= 1 && s[i] != '?'){
         ans += s[i];
     } else if (n <= 1 && s[i] == '?'){
         ans += 'a';
     } else{
-        for (int i = 0; i < n; i++){
+        for (i = 0; i < n; i++){
             char c = s[i];
             if(c == '?'){
-                for (int j = i+1; j < n; j++){
+                for (j = i+1; j < n; j++){
                     if (s[j] != '?'){
                         if(s[j] == 'z'){
                             char ch = char((int)s[j] - 1);
-
+                            if (s[i-1] == ch){
+                                ch = char((int)s[j] - 2);
+                                ans += ch;
+                            }else {
+                                ans += ch;
+                            }
                         }else if (s[j] == 'a'){
-
+                            char ch = char((int)s[j] + 1);
+                            if (s[i] == ch){
+                                ch = char((int)s[j] + 2);
+                                ans += ch;
+                            }else {
+                                ans += ch;
+                            }
                         }
                     }
                 }
