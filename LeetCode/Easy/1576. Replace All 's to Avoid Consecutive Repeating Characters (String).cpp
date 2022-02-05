@@ -6,9 +6,9 @@ int main(){
     for (int i = 0; i < n; i++){
 
         if(s[i] == '?'){
-            if (i == 0 && s[i] == 'z' || i == n - 1 && s[i] == 'z'){
+            if (i == 0 && s[i+1] == 'z' || i == n - 1 && s[i-1] == 'z'){
                 ans += char((int)s[i+1] - 1);
-            }else if(i == 0 && s[i] == 'a' || i == n - 1 && s[i] == 'a'){
+            }else if(i == 0 && s[i+1] == 'a' || i == n - 1 && s[i-1] == 'a'){
                 ans += char((int)s[i+1] + 1);
             }else{
                 ans += char((int)s[i+1] + 1);
