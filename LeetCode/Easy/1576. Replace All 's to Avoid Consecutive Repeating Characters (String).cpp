@@ -3,8 +3,6 @@ using namespace std;
 int main(){
     string  s = "?zs", ans;
     int n = s.size();
-    //cout << char((int)a + 1);
-
     for (int i = 0; i < n; i++){
 
         if(s[i] == '?'){
@@ -19,6 +17,6 @@ int main(){
             ans += s[i];
         }
     }
-
+    cout<< ans;
     return 0;
 }
