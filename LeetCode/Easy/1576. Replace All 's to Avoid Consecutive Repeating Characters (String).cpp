@@ -10,39 +10,8 @@ int main(){
     } else{
         for (i = 0; i < n; i++){
             //cout << s[i] << " ";
-            char c = s[i];
-            if(c == '?'){
-                for (j = i+1; j < n; j++){
-                    if (s[j] != '?'){
-                        if(s[j] == 'z'){
-                            char ch = char((int)s[j] - 1);
-                            if (ans[i-1] == ch || ans[i+1] == ch){
-                                ch = char((int)s[j] - 2);
-                                ans += ch;
-                            }else {
-                                ans += ch;
-                            }
-                        }else if (s[j] == 'a'){
-                            char ch = char((int)s[j] + 1);
-                            if (ans[i - 1] == ch || ans[i+1] == ch){
-                                ch = char((int)s[j] + 2);
-                                ans += ch;
-                            }else {
-                                ans += ch;
-                            }
-                        }else {
-                            char ch = char((int)s[j] + 1);
-                            if (ans[i - 1] == ch || ans[i+1] == ch){
-                                ch = char((int)s[j] - 2);
-                                ans += ch;
-                            }else {
-                                ans += ch;
-                            }
-                        }
-                    }
-                }
-            } else{
-                ans += s[i];
+            if(s[i] == '?' && s[i+1] == '?'){
+
             }
         }
     }
