@@ -16,7 +16,7 @@ int main(){
                     if (s[j] != '?'){
                         if(s[j] == 'z'){
                             char ch = char((int)s[j] - 1);
-                            if (ans[i-1] == ch){
+                            if (ans[i-1] == ch || ans[i+1] == ch){
                                 ch = char((int)s[j] - 2);
                                 ans += ch;
                             }else {
@@ -24,8 +24,16 @@ int main(){
                             }
                         }else if (s[j] == 'a'){
                             char ch = char((int)s[j] + 1);
-                            if (ans[i - 1] == ch){
+                            if (ans[i - 1] == ch || ans[i+1] == ch){
                                 ch = char((int)s[j] + 2);
+                                ans += ch;
+                            }else {
+                                ans += ch;
+                            }
+                        }else {
+                            char ch = char((int)s[j] + 1);
+                            if (ans[i - 1] == ch || ans[i+1] == ch){
+                                ch = char((int)s[j] - 2);
                                 ans += ch;
                             }else {
                                 ans += ch;
@@ -39,7 +47,7 @@ int main(){
         }
     }
 
-    //cout<< ans;
+    cout<< ans;
     return 0;
 }
 
