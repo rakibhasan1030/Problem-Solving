@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string  s = "???z???", ans;
+    string  s = "a???z???", ans;
     int n = s.size(), i = 0, j = 0;
     if (n <= 1 && s[i] != '?'){
         ans += s[i];
@@ -10,7 +10,10 @@ int main(){
     } else{
         for (i = 0; i < n; i++){
             //cout << s[i] << " ";
-            if(s[i] == '?' && s[i+1] == '?'){
+            if(s[i] == '?' && s[i+1] == '?' && i < 1){
+                ans += 'a';
+            }else if(){
+
             }
         }
     }
