@@ -13,7 +13,7 @@ int main(){
     while(1){ //infinite loop
         if(text[i] == ' ' || text[i] == '\0'){
             total_space++;
-            if(text[i] != ' ' && text[i] != '\0'){
+            if(prev_char != ' ' && prev_char != '\0'){
                 total_word++;
             }
         }
@@ -27,5 +27,6 @@ int main(){
     }
 
 
-    cout << "Total Space - " << total_space - 1 << "   " << "Total Word - " << total_word;
+
+    //cout << "Total Space - " << total_space - 1 << "   " << "Total Word - " << total_word;
 }
