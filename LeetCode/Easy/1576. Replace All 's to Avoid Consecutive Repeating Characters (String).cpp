@@ -1,32 +1,13 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    string  s = "a???z???", ans;
-    int n = s.size(), i = 0, j = 0;
-    if (n <= 1 && s[i] != '?'){
-        ans += s[i];
-    } else if (n <= 1 && s[i] == '?'){
-        ans += 'a';
-    } else{
-        for (i = 0; i < n; i++){
-            //cout << s[i] << " ";
-            if(s[i] == '?' && s[i+1] == '?' && i < 1){
-                ans += 'a';
-            }else if(){
-
+class Solution {
+public:
+    string modifyString(string s) {        
+        for(int i = 0; i < s.length(); i++){
+            if(s[i] == '?'){
+                if((i == 0 || s[i - 1] != 'a') && (i == s.length() - 1 || s[i + 1] != 'a')) s[i] = 'a';  
+                else if((i == 0 || s[i - 1] != 'b') && (i == s.length() - 1 || s[i + 1] != 'b')) s[i] = 'b';
+                else if((i == 0 || s[i - 1] != 'c') && (i == s.length() - 1 || s[i + 1] != 'c')) s[i] = 'c';
             }
         }
+        return s;
     }
-
-    //cout<< ans;
-    return 0;
-}
-
-
-//            if (i == 0 && s[i+1] == 'z' || i == n - 1 && s[i-1] == 'z'){
-//                ans += char((int)s[i+1] - 1);
-//            }else if(i == 0 && s[i+1] == 'a' || i == n - 1 && s[i-1] == 'a'){
-//                ans += char((int)s[i+1] + 1);
-//            }else{
-//                ans += char((int)s[i+1] + 1);
-//            }
+};
