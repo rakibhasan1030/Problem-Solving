@@ -12,10 +12,13 @@ int main(){
         if(s[i] == 'A'){
             a++;
         } else if (s[i] == 'P' && s[i+1] == 'P' && s[i+2] == 'P') {
-            ans = false; break;
+            ans = false;
+            break;
         }
     }
-    if(a >= 2) ans = false;
-    cout << a << endl;
-    cout << ans;
+    if(a >= 2){
+       ans = false;
+    }
+    cout << "a = " << a << endl;
+    cout << "ANS = " << ans;
 }
