@@ -8,10 +8,14 @@ int main(){
     n = s.size();
 
     for(int i = 0; i < n; i++){
-        if(s[i] == 'A') a++;
-        else if (s[i] == 'P' && s[i+1] == 'P' && s[i+2] == 'P') ans = false; break;
+        cout << s[i] << "   ";
+        if(s[i] == 'A'){
+            a++;
+        } else if (s[i] == 'P' && s[i+1] == 'P' && s[i+2] == 'P') {
+            ans = false; break;
+        }
     }
     if(a >= 2) ans = false;
-
+    cout << a << endl;
     cout << ans;
 }
