@@ -20,13 +20,10 @@ int main(){
         prev_char = text[i];
 
         if(text[i] == '\0'){
-            break;
+            break; //break loop
         }else{
             i++;
         }
     }
-
-
-
     //cout << "Total Space - " << total_space - 1 << "   " << "Total Word - " << total_word;
 }
