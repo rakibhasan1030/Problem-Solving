@@ -8,6 +8,7 @@ int main(){
         if(text [i] == ' '){
             total_space++;
         }
+
     }
     cout << total_space;
 }
