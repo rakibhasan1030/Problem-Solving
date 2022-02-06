@@ -11,16 +11,15 @@ int main(){
     prev_char = '\0';
 
     while(1){ //infinite loop
-        if(s[i] == ' ' || s[i] == '\0'){
+        if(text[i] == ' ' || text[i] == '\0'){
             total_space++;
-            if(s[i] != ' ' || s[i] != '\0'){
+            if(text[i] != ' ' && text[i] != '\0'){
                 total_word++;
             }
-
         }
-        prev_char = s[i];
+        prev_char = text[i];
 
-        if(s[i] == '\0'){
+        if(text[i] == '\0'){
             break;
         }else{
             i++;
@@ -28,5 +27,5 @@ int main(){
     }
 
 
-    cout << "Total Space - " << total_space << "   " << "Total Word - " << total_word;
+    cout << "Total Space - " << total_space - 1 << "   " << "Total Word - " << total_word;
 }
