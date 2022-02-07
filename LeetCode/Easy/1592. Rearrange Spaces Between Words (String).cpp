@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    string text = "  this   is  a sentence ", ans = "";
+    string text = " practice   makes   perfect", ans = "";
     int i = 0, j = 0, string_len = 0, total_space = 0, total_word = 0, between_space = 0, end_space = 0;
     string_len = text.size();
     char prev_char;
@@ -31,7 +31,7 @@ int main(){
     }
 
     prev_char = ' ';
-    for(int i = 0; i < string_len; i++){
+    for(int i = 0; i <= string_len; i++){
        if(prev_char == ' ' && text[i] != ' ' || prev_char != ' ' && text[i] != ' ' ){
         ans += text[i];
        }else if (text[i] == ' ' && prev_char != ' ' && i+1 != string_len){
@@ -41,6 +41,7 @@ int main(){
        }else if (text[i] == '\0' && prev_char != ' ' || text[i] == '\0' && prev_char == ' '){
            for(int k = 0; k < end_space; k++){
                 ans += " ";
+                cout << "Add Space" << endl;
            }
        }
        prev_char = text[i];
