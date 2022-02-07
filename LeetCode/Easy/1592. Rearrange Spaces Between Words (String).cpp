@@ -28,9 +28,10 @@ int main(){
     total_space = total_space - 1; // minus 1 for '\0'
 
     if (total_word > 1){
-        between_space = total_space / (total_word - 1)
-        end_space = total_space % (total_word - 1)
+        between_space = total_space / (total_word - 1);
+        end_space = total_space % (total_word - 1);
     }
+
 
 
     cout << "Total Space - " << total_space << "   " << "Total Word - " << total_word;
