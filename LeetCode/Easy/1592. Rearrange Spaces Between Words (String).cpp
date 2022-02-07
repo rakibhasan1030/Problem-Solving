@@ -31,20 +31,19 @@ int main(){
     }
 
     prev_char = ' ';
-    for(int i = 0; i <= string_len; i++){
+    for(int i = 0; i < string_len; i++){
        if(prev_char == ' ' && text[i] != ' ' || prev_char != ' ' && text[i] != ' ' ){
         ans += text[i];
-       }else if (text[i] == ' ' && prev_char != ' ' && i+1 != string_len){
+       }else if (text[i] == ' ' && prev_char != ' ' && text[i+1] != '\0'){
            for(int j = 0; j < between_space; j++){
                 ans += " ";
            }
-       }else if (text[i] == '\0' && prev_char != ' ' || text[i] == '\0' && prev_char == ' '){
-           for(int k = 0; k < end_space; k++){
-                ans += " ";
-                cout << "Add Space" << endl;
-           }
        }
        prev_char = text[i];
+    }
+    for(int k = 0; k < end_space; k++){
+        ans += " ";
+        cout << "Add Space" << endl;
     }
 
     cout << "total_space : " << total_space << "\n" << "between_space : "  << between_space << "\n" << "end_space : " << end_space << endl;
