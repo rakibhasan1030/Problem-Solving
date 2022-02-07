@@ -1,12 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    string text = "  this   is  a sentence ";
+    string text = "  this   is  a sentence ", ans = "";
     int i = 0, j = 0, string_len = 0, total_space = 0, total_word = 0, between_space = 0, end_space = 0;
     string_len = text.size();
     char prev_char;
-
-
 
     prev_char = '\0';
 
@@ -32,7 +30,23 @@ int main(){
         end_space = total_space % (total_word - 1);
     }
 
+    prev_char = ' ';
+    for(int i = 0; i < string_len; i++){
+       if(prev_char == ' ' && text[i] != ' ' || prev_char != ' ' && text[i] != ' ' ){
+        ans += text[i];
+       }else if (text[i] == ' ' && prev_char != ' ' && i+1 != string_len){
+           for(int j = 0; j < between_space; j++){
+                ans += " ";
+           }
+       }else if (text[i] == '\0' && prev_char != ' ' || text[i] == '\0' && prev_char == ' '){
+           for(int k = 0; k < end_space; k++){
+                ans += " ";
+           }
+       }
+       prev_char = text[i];
+    }
 
+    cout << "total_space : " << total_space << "\n" << "between_space : "  << between_space << "\n" << "end_space : " << end_space << endl;
+    cout << "Text Size : " << string_len << "\n" << "Ans Size : "  << ans.size() << endl;
 
-    cout << "Total Space - " << total_space << "   " << "Total Word - " << total_word;
 }
