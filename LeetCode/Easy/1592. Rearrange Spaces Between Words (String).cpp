@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main(){
-    string text = "     Hamari     ", ans = "", temp = "";
+class Solution {
+public:
+    string reorderSpaces(string text) {
+    string ans = "", temp = "";
     int i = 0, j = 0, string_len = 0, total_space = 0, total_word = 0, between_space = 0, end_space = 0;
     vector<string> s;
     string_len = text.size();
@@ -26,13 +26,12 @@ int main(){
         }
     }
 
-    cout << "Total WORD --- " << total_word << endl;
     total_space = total_space - 1; // minus 1 for '\0'
-    cout<< "Vector Size : " << s.size() << endl;
 
     if(total_word > 1){
         between_space = total_space / (total_word - 1);
         end_space = total_space % (total_word - 1);
+
         for(int i = 0; i < s.size(); i++){
             int t = between_space;
             ans += s[i];
@@ -40,6 +39,11 @@ int main(){
                 while(t){
                     ans += ' ';
                     t--;
+                }
+            }else if (i == s.size()- 1 && end_space > 0){
+                while(end_space){
+                    ans += ' ';
+                    end_space--;
                 }
             }
         }
@@ -51,20 +55,6 @@ int main(){
             total_space--;
         }
     }
-    cout<< "ANS : " << ans << endl;
-
-
-    int a = 1;
-    if(a > 1){
-        cout<< "A" << endl;
-    }else{
-        cout<< "NOT A" << endl;
+    return ans;
     }
-
-
-
-
-    //cout << "total_space : " << total_space << "\n" << "between_space : "  << between_space << "\n" << "end_space : " << end_space << endl;
-    cout << "Text Size : " << string_len << "\n" << "Ans Size : "  << ans.size() << endl;
-
-}
+};
