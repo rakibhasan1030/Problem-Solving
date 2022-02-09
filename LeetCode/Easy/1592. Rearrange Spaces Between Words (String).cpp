@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    string text = "icxfdtla    bjagtwmsad    fqejf    ", ans = "";
+    string text = "     Hamari     ", ans = "", temp = "";
     int i = 0, j = 0, string_len = 0, total_space = 0, total_word = 0, between_space = 0, end_space = 0;
+    vector<string> s;
     string_len = text.size();
     char prev_char;
 
@@ -12,9 +13,11 @@ int main(){
         if(text[i] == ' ' || text[i] == '\0'){
             total_space++;
             if(prev_char != ' ' && prev_char != '\0'){
+                s.push_back(temp);
                 total_word ++;
+                temp = "";
             }
-        }
+        }else temp += text[i];
         prev_char = text[i];
         if(text[i] == '\0'){
             break; //break loop
@@ -25,41 +28,43 @@ int main(){
 
     cout << "Total WORD --- " << total_word << endl;
     total_space = total_space - 1; // minus 1 for '\0'
+    cout<< "Vector Size : " << s.size() << endl;
 
-    if (total_word > 1){
+    if(total_word > 1){
         between_space = total_space / (total_word - 1);
         end_space = total_space % (total_word - 1);
-
-        prev_char = ' ';
-        for(int i = 0; i < string_len; i++){
-            if(prev_char == ' ' && text[i] != ' ' || prev_char != ' ' && text[i] != ' ' ){
-                ans += text[i];
-            }else if (text[i] == ' ' && prev_char != ' ' && text[i+1] != '\0'){
-                for(int j = 0; j < between_space; j++){
-                    ans += " ";
-               }
-           }
-           prev_char = text[i];
-        }
-
-        for(int k = 0; k < end_space; k++){
-            ans += " ";
-        }
-    } else{
-        prev_char = ' ';
-        for(int i = 0; i < string_len; i++){
-            if(prev_char == ' ' && text[i] != ' ' || prev_char != ' ' && text[i] != ' ' ){
-                ans += text[i];
+        for(int i = 0; i < s.size(); i++){
+            int t = between_space;
+            ans += s[i];
+            if(!(i == s.size() - 1)){
+                while(t){
+                    ans += ' ';
+                    t--;
+                }
             }
-           prev_char = text[i];
-       }
-       for(int k = 0; k < total_space; k++){
-        cout << "ELSE ADD SPACE !" << endl;
-        ans += " ";
-      }
+        }
+
+    }else{
+        ans += s[0];
+        while(total_space){
+            ans += ' ';
+            total_space--;
+        }
+    }
+    cout<< "ANS : " << ans << endl;
+
+
+    int a = 1;
+    if(a > 1){
+        cout<< "A" << endl;
+    }else{
+        cout<< "NOT A" << endl;
     }
 
-    cout << "total_space : " << total_space << "\n" << "between_space : "  << between_space << "\n" << "end_space : " << end_space << endl;
+
+
+
+    //cout << "total_space : " << total_space << "\n" << "between_space : "  << between_space << "\n" << "end_space : " << end_space << endl;
     cout << "Text Size : " << string_len << "\n" << "Ans Size : "  << ans.size() << endl;
 
 }
