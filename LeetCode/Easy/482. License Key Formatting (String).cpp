@@ -21,11 +21,14 @@ int main(){
 
     for(int j = 0; j <= tempS; j++){
         ans += temp[j];
-        if(firstGroupQuantity > 0 && j+1 == firstGroupQuantity){
+        if(firstGroupQuantity > 0 && j + 1 == firstGroupQuantity){
             ans += '-';
+            cout << "j : " << j <<endl;
         }
         if(j == k){
              ans += '-';
+             cout << "j : " << j <<endl;
+             k += k;
         }
     }
     transform(ans.begin(), ans.end(), ans.begin(), ::toupper);
