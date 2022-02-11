@@ -21,11 +21,11 @@ int main(){
 
     for(int j = 0; j <= tempS; j++){
         ans += temp[j];
-        if(firstGroupQuantity > 0 && j + 1 == firstGroupQuantity){
+        if(firstGroupQuantity > 0 && j+1 == firstGroupQuantity){
             ans += '-';
             cout << "j : " << j <<endl;
         }
-        if(j == k){
+        if(j+1 == firstGroupQuantity+k && temp[j+1] != '\0'){
              ans += '-';
              cout << "j : " << j <<endl;
              k += k;
