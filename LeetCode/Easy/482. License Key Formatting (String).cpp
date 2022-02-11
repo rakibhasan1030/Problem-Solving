@@ -9,10 +9,12 @@ int main(){
 
     for(int i = 0; i <= sz; i++){
         if(s[i] != '-' && s[i] != '\0'){
-            temp += s[i];
+            temp += s[i]; // separate all char in a string without dashes
         }
     }
-    transform(temp.begin(), temp.end(), temp.begin(), toupper);
+
+
+
     cout<< temp;
     return 0;
 }
