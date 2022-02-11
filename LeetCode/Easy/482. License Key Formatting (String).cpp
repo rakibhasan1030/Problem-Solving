@@ -3,14 +3,16 @@ using namespace std;
 int main(){
 
     string s = "5F3Z-2e-9-w", temp, ans;
-    int k = 4;
+    int k = 4, sz;
 
-    for(int i = 0; i <= s.size(); i++){
-        if(s[i] != '-' || s[i] = '\0'){
-            temp += temp + s[i];
+    sz = s.size();
+
+    for(int i = 0; i <= sz; i++){
+        if(s[i] != '-' && s[i] != '\0'){
+            temp += s[i];
         }
     }
-
-    cout<< temp;
-    return ans;
+    ans = toupper(temp);
+    cout<< ans;
+    return 0;
 }
