@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
 
-    string s = "2-5g-3-J", temp, ans;
-    int k = 2, sz, firstGroupQuantity, restOfGroupQuantity;
+    string s = "5F3Z-2e-9-w", temp, ans;
+    int k = 4, sz, firstGroupQuantity, restOfGroupQuantity;
 
     sz = s.size();
 
