@@ -10,8 +10,7 @@ public:
         bool res = false;
 
         peek = arr[0];
-        for (int i = 0; i < len; i++)
-        {
+        for (int i = 0; i < len; i++) {
             if (peek < arr[i])
             {
                 peek = arr[i];
