@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
 
-    string s = "5F3Z-2e-9-w", temp, ans;
-    int k = 4, sz, firstGroupQuantity, restOfGroupQuantity;
+    string s = "2-5g-3-J", temp, ans;
+    int k = 2, sz, firstGroupQuantity, restOfGroupQuantity;
 
     sz = s.size();
 
@@ -19,13 +19,14 @@ int main(){
 
 
 
-    for(int j = 0; j < tempS; j++){
-        if(firstGroupQuantity > 0 && j == firstGroupQuantity){
+    for(int j = 0; j <= tempS; j++){
+        ans += temp[j];
+        if(firstGroupQuantity > 0 && j+1 == firstGroupQuantity){
             ans += '-';
-        } else if(j == k){
+        }
+        if(j == k){
              ans += '-';
         }
-        ans += temp[j];
     }
     transform(ans.begin(), ans.end(), ans.begin(), ::toupper);
     cout << "firstGroupQuantity = " << firstGroupQuantity << "   |   " << "tempS = " << tempS << "   |   " << ans;
