@@ -14,20 +14,20 @@ int main(){
     }
 
     //calculation
-    firstGroupQuantity = sz % k;
-    restOfGroupQuantity = sz / k;
-
     int tempS = temp.size();
+    firstGroupQuantity = tempS % k;
+
+
 
     for(int j = 0; j < tempS; j++){
-        if(firstGroupQuantity > 0 && j + 1 == firstGroupQuantity){
+        if(firstGroupQuantity > 0 && j == firstGroupQuantity){
             ans += '-';
-        } else if(restOfGroupQuantity > 0 && j + 1 == restOfGroupQuantity){
+        } else if(j == k){
              ans += '-';
         }
-        ans += temp;
+        ans += temp[j];
     }
-
-    cout<< ans;
+    transform(ans.begin(), ans.end(), ans.begin(), ::toupper);
+    cout << "firstGroupQuantity = " << firstGroupQuantity << "   |   " << "tempS = " << tempS << "   |   " << ans;
     return 0;
 }
