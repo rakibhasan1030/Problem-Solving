@@ -12,7 +12,7 @@ int main(){
             temp += s[i];
         }
     }
-    ans = toupper(temp);
-    cout<< ans;
+    transform(temp.begin(), temp.end(), temp.begin(), toupper);
+    cout<< temp;
     return 0;
 }
