@@ -16,6 +16,7 @@ int main()
             prefix.pop_back();
         }
     }
+
     cout << prefix;
     return 0;
 }
