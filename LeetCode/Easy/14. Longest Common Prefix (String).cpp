@@ -3,23 +3,25 @@ using namespace std;
 int main()
 {
     vector<string> strs = {"flower","flow","flight"};
-    string res = strs.front();
-    //cout << res << endl;
+        //string res;
+        auto res = strs.front();
+        int len=0,j=0;
+        //traverse through each string array
+        for(int i=1;i<strs.size();i++){
+            //iterate each string
+            if(res[0]!=strs[i][0]){
 
-    int len = 0, j = 0;
-
-    for(int i = 1; i < strs.size(); i++){
-        if(res[0]!= strs[i][0]){
-            //return "";
-        }
-        len = res.size() > strs[i].size() ? res.size() : strs[i].size();
-        for(j; j < len; j++){
-            if(res[j] != strs[i][j]){
-                break;
             }
+            len = res.length()>strs[i].length()?strs[i].length():res.length();
+
+            for(j=0;j<len;j++){
+                if(res[j]!=strs[i][j]){
+                    break;
+                }
+            }
+            //erase the extra or not equal elements
+            res.erase(j);
         }
-        res.erase(j);
-    }
-    cout << res << endl;
+        cout<<res;
     return 0;
 }
