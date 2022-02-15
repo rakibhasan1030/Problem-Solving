@@ -7,7 +7,7 @@ public:
     {
         if(res[0]!= strs[i][0])
         {
-            //return "";
+            return "";
         }
         len = res.size() > strs[i].size() ? strs[i].size() : res.size();
         for(j = 0; j < len; j++)
