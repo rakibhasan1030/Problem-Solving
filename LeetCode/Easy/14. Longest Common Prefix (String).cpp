@@ -1,11 +1,8 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    vector<string> strs = {"flower","flow","flight"};
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
     string res = strs.front();
     int len = 0, j = 0;
-
     for(int i = 1; i < strs.size(); i++)
     {
         if(res[0]!= strs[i][0])
@@ -13,7 +10,6 @@ int main()
             //return "";
         }
         len = res.size() > strs[i].size() ? strs[i].size() : res.size();
-        cout<< "Length : " << len << endl;
         for(j = 0; j < len; j++)
         {
             if(res[j] != strs[i][j])
@@ -21,9 +17,8 @@ int main()
                 break;
             }
         }
-        cout<< j << endl;
         res.erase(j);
     }
-    cout << res << endl;
-    return 0;
-}
+    return res;
+    }
+};
