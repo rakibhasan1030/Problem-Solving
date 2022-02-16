@@ -5,10 +5,9 @@ int main(){
     int word = 0;
     if (s.size() > 0){
         for(int i = 0; i <= s.size(); i ++){
-            cout<< s[i] << endl;
-            if (s[i] != ' ' && s[i+1] == ' ' || s[i+1] == '\0'){
-                //cout<< s[i] << endl;
+            if (s[i] != ' ' && s[i+1] == ' ' || s[i] != ' ' && s[i+1] == '\0'){
                 word++;
+                cout<< s[i] << " : " << word << endl;
             }
         }
     }
