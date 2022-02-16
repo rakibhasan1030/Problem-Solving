@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    string s = "10010100", zeroLeading;
+    string s = "10", zeroLeading;
     int opZero = 0, opOne = 0, op = 0;
 
     for (int i = 0; i < s.size(); i++)
@@ -33,6 +33,6 @@ int main()
 
     op = opZero < opOne ? opZero : opOne;
 
-    cout << zeroLeading;
+    cout << op;
     return 0;
 }
