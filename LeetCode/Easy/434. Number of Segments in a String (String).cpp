@@ -9,6 +9,6 @@ int main(){
             word++;
         }
     }
-
+    cout << word;
     return 0;
 }
