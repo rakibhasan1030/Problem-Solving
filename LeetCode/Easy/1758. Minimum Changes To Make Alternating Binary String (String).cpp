@@ -6,8 +6,6 @@
   For i, if s[ i ] do not follow the rule then we increase x
 # After that we find and return the minimum between x and y */
 
-
-
 class Solution {
 public:
     int minOperations(string s){
