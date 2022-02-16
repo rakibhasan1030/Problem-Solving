@@ -3,9 +3,7 @@ using namespace std;
 int main()
 {
     string s = "01001110";
-            //     10 01
     int c = 0;
-
     if(s.size() > 2){
         for(int i = 0; i < s.size(); i++){
             if (s[i] == '0'){
