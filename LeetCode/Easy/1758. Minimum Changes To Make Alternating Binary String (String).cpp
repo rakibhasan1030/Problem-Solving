@@ -9,17 +9,6 @@ int main()
     {
         if(i%2 == 0)
         {
-            if(s[i] == '0')
-            {
-                opZero++;
-            }
-            else
-            {
-                opOne++;
-            }
-        }
-        else if(i%2 == 1)
-        {
             if(s[i] == '1')
             {
                 opOne++;
@@ -29,7 +18,21 @@ int main()
                 opZero++;
             }
         }
+        else
+        {
+            if(s[i] == '0')
+            {
+                opOne++;
+            }
+            else
+            {
+                opZero++;
+            }
+        }
     }
+
+
+    cout<< "One = " << opOne << "   " << "Zero = " << opZero << endl;
 
     op = opZero < opOne ? opZero : opOne;
 
