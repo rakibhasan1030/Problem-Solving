@@ -5,11 +5,12 @@ int main(){
     int word = 0;
     if (s.size() > 0){
         for(int i = 0; i <= s.size(); i ++){
-            if (isalpha(s[i]) || isdigit(s[i]) && s[i+1] == ' ' || s[i+1] == '\0'){
+            if (isalpha(s[i])){
+                cout<< s[i] << endl;
                 word++;
             }
         }
     }
-    cout << word;
+    //cout << word;
     return 0;
 }
