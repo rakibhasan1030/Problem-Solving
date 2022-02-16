@@ -4,10 +4,9 @@ int main(){
     string s = "Hello, my name is John";
     int word = 0;
     if (s.size() > 0){
-        for(int i = 0; i <= s.size(); i ++){
+        for(int i = 0; i < s.size(); i ++){
             if (s[i] != ' ' && s[i+1] == ' ' || s[i] != ' ' && s[i+1] == '\0'){
                 word++;
-                cout<< "i = " << i << "   -   "<< s[i] << " : " << word << endl;
             }
         }
     }
