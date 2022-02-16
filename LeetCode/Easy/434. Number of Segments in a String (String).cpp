@@ -7,7 +7,7 @@ int main(){
         for(int i = 0; i <= s.size(); i ++){
             if (s[i] != ' ' && s[i+1] == ' ' || s[i] != ' ' && s[i+1] == '\0'){
                 word++;
-                cout<< s[i] << " : " << word << endl;
+                cout<< "i = " << i << "   -   "<< s[i] << " : " << word << endl;
             }
         }
     }
