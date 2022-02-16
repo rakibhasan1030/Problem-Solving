@@ -1,16 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "   fly me   to   the moon  ";
+    string s = "   fly me   to   the moon  ", temp;
     vector<string> st;
-    int c;
     for(int i = 0; i < s.size(); i++){
-        if(ischar && s[i+1] == ' ' || s[i+1] == '\0'){
-            cout<< s[i];
-            c++;
+        if(isalpha(s[i])){
+            temp += s[i];
+            if(isalpha(s[i]) && s[i+1] == ' '){
+                st.push_back(temp);
+                temp = "";
+            }
         }
     }
-    cout<< c;
+
+    cout << st[st.size()-1].size() << endl;
+
     return 0;
 }
 
