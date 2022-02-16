@@ -31,7 +31,7 @@ int main()
         }
     }
 
-    op = opZero < opOne ?
+    op = opZero < opOne ? opZero : opOne;
 
     cout << zeroLeading;
     return 0;
