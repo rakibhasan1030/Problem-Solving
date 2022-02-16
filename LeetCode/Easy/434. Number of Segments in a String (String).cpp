@@ -5,7 +5,9 @@ int main(){
     int word = 0;
 
     for(int i = 0; i <= s.size(); i ++){
-
+        if (s[i] == ' ' || s[i] == '\0'){
+            word++;
+        }
     }
 
     return 0;
