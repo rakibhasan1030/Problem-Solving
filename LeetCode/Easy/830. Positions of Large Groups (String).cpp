@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "abcdddeeeeaabbbcd";
+    string s = "abc";
     int a = 0, b = 0;
     vector<vector<int>> z;
     for(int i = 0; i < s.size(); i++){
         if(s[i] != s[i-1] && s[i] == s[i+1] && s[i-1] != '\0' && s[i+1] != '\0'){ // for first letter
             a = i;
-           // cout << "(" << i << ")" << s[i];
+            cout << "(" << i << ")" << s[i];
         } else if (s[i] == s[i-1] && s[i] == s[i+1] && s[i-1] != '\0' && s[i+1] != '\0'){ // for middle letter
-            //cout << s[i];
+            cout << s[i];
         } else if (s[i] == s[i-1] && s[i] != s[i+1] && s[i-1] != '\0' && s[i+1] != '\0'){ // for last letter
             b = i;
-           // cout << s[i] << "(" << i << ")";
-           // cout << "   |   ";
+            cout << s[i] << "(" << i << ")";
+            cout << "   |   ";
         }
         if(b - a >= 2){
             vector<int> y;
@@ -23,6 +23,8 @@ int main(){
             a = 0;
             b = 0;
         }
+        //cout << "i = " << i <<endl;
+        //cout <<endl;
     }
     //cout <<endl;
     for (auto i : z){
