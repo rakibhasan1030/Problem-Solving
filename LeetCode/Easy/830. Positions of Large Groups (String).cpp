@@ -5,12 +5,14 @@ int main(){
     int c, j;
 
     for(int i = 0; i < s.size(); i++){
-        if(s[i] != s[i-1] && s[i] == s[i+1]  ||  s[i] == s[i-1] && s[i] == s[i+1]){
+        if(s[i] != s[i-1] && s[i] == s[i+1]){ // for first letter
             cout << s[i];
-        }else if (s[i] == s[i-1] && s[i] != s[i+1]){
+        } else if (s[i] == s[i-1] && s[i] == s[i+1]){ // for middle letter
+            cout << s[i];
+        } else if (s[i] == s[i-1] && s[i] != s[i+1]){ // for last letter
+            cout << s[i];
             cout << "   |   ";
         }
     }
-    cout<< c ;
     return 0;
 }
