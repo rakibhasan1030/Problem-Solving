@@ -7,8 +7,9 @@ int main(){
         if (sentence[i] != ' '){
             temp += sentence[i];
         }
-        if(sentence[i+1] == ' ' || sentence[i+1] == '\0'){
+        if(isalpha(sentence[i]) && sentence[i+1] == ' ' || isalpha(sentence[i]) && sentence[i+1] == '\0'){
             cout << temp << endl;
+            temp = "";
         }
 
     }
