@@ -24,9 +24,9 @@ int main(){
             b = 0;
         }
         //cout << "i = " << i <<endl;
-        //cout <<endl;
+        //cout << endl;
     }
-    //cout <<endl;
+    //cout << endl;
     for (auto i : z){
         cout <<"[" << i[0] <<"," << i[1] << "]";
     }
