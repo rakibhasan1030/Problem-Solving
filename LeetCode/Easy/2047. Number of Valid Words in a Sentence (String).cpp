@@ -9,11 +9,11 @@ int main(){
             temp += sentence[i];
         }
         if(sentence[i] != ' ' && sentence[i+1] == ' ' || sentence[i] != ' ' && sentence[i+1] == '\0'){
-            cout << temp << endl;
 
-
-
-
+            for(int j = 0; j < temp.size(); j++){
+                cout << temp[j] << " ";
+            }
+            cout << endl;
 
             temp = "";
         }
