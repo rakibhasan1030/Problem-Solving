@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     string sentence = "alice and  bob are playing stone-game10", temp;
-    int ans;
+    int isValid;
 
     for(int i = 0; i < sentence.size(); i++){
         if (sentence[i] != ' '){
@@ -12,6 +12,7 @@ int main(){
 
             for(int j = 0; j < temp.size(); j++){
                 cout << temp[j] << "";
+
             }
             cout << endl;
 
