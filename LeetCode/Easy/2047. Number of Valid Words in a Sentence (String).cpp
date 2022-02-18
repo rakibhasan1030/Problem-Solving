@@ -3,36 +3,21 @@ using namespace std;
 int main(){
     string sentence = "alice and  bob are playing stone-game10", temp;
     int isValid;
+    vector<string> v;
 
     for(int i = 0; i < sentence.size(); i++){
         if (sentence[i] != ' '){
             temp += sentence[i];
         }
         if(sentence[i] != ' ' && sentence[i+1] == ' ' || sentence[i] != ' ' && sentence[i+1] == '\0'){
-
-            for(int j = 0; j < temp.size(); j++){
-                if(!isdigit(temp[j])){
-                    if(j == temp.size() - 1){
-                        isValid++;
-                    }
-                }
-                if(!isalpha(temp[j]) && !isdigit(temp[j])){
-                    cout << temp[j];
-                    if(j == temp.size() - 1){
-                        isValid++;
-                    }
-                }
-
-            }
-            cout << endl;
+            v.push_back(temp);
             temp = "";
         }
 
     }
+    for(int i = 0; i < v.size(); i++){
+        cout<< v[i] << endl;
 
-        cout << endl;
-        cout << endl;
-        cout << isValid << endl;
-
+    }
     return 0;
 }
