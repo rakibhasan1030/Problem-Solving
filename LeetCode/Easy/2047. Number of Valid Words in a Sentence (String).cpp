@@ -11,13 +11,26 @@ int main(){
         if(sentence[i] != ' ' && sentence[i+1] == ' ' || sentence[i] != ' ' && sentence[i+1] == '\0'){
 
             for(int j = 0; j < temp.size(); j++){
-                cout << temp[j] << "";
+
+                if(isalpha(temp[j])){
+                    cout << temp[j];
+
+
+                    if(j == temp.size() - 1){
+                        isValid++;
+                    }
+                }
 
             }
             cout << endl;
-
             temp = "";
         }
+
     }
+
+        cout << endl;
+        cout << endl;
+        cout << isValid << endl;
+
     return 0;
 }
