@@ -4,6 +4,7 @@ Traverse the string s and check if s[ i ] is equal s[ i + 1 ], then it will be a
 After that, checked if s[ i ] is equal to s[ i - 1 ] and also s[ i ] not equal to s[ i + 1 ], that means the previous char is same as s[ i ] but next char is not equal. It means it will be the last char of the group, So, also store this last position of this group in b. But most importantly, check if i is greater than 0, because, if i is equal or less than 0, then where the condition s[ i - 1 ] is checked, it'll find the value of ( -1 ) position, that doesn't exists, and it'll give run time error (overflow).
 Then, checked the difference between first and last position, if the result is greater or equal 2 then it'll contain at least char.
 And pushed the value to a vector. and returned! ***/
+
 class Solution {
 public:
     vector<vector<int>> largeGroupPositions(string s) {
