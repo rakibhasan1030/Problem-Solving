@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s = "abc";
+    string s = "abcdddeeeeaabbbcd";
     int a = 0, b = 0;
     vector<vector<int>> z;
     for(int i = 0; i < s.size(); i++){
@@ -26,7 +26,7 @@ int main(){
         //cout << "i = " << i <<endl;
         //cout << endl;
     }
-    //cout << endl;
+    cout << endl;
     for (auto i : z){
         cout <<"[" << i[0] <<"," << i[1] << "]";
     }
