@@ -16,8 +16,11 @@ int main(){
 
     }
     for(int i = 0; i < v.size(); i++){
-        cout<< v[i] << endl;
+        string s = v[i];
+        cout<< s << endl;
 
+        //for()
     }
     return 0;
 }
+
