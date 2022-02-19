@@ -1,8 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+    bool isValid(string s) {
+        int hyphens = 0, n = s.size();
+
+        for (int i = 0; i < n; i++) {
+
+            if (isalpha(s[i])) continue;
+
+            if (isdigit(s[i])) return false;
+
+            if ((s[i] == '.' || s[i] == ',' || s[i] == '!') && i != n-1) return false;
+
+            if (s[i] == '-') {
+                if (hyphens || i == 0 || !isalpha(s[i-1]) || i == n-1 || !isalpha(s[i+1])) return false;
+                hyphens++;
+            }
+        }
+
+        return true;
+    }
+
 int main(){
-    string sentence = "alice and  bob are playing stone-game10", temp;
-    int isInvalid = 0, h = 0, p = 0;
+    string sentence = "!this  1-s b8d!", temp;
+    int ans = 0;
     vector<string> v;
 
     for(int i = 0; i < sentence.size(); i++){
@@ -16,15 +37,10 @@ int main(){
 
     }
     for(int i = 0; i < v.size(); i++){
-        string s = v[i];
-        cout<< s << endl;
-        for(int j = 0; j < s.size(); i++){
-            if(isdigit(s[i])){
-                isInvalid++;
-                break;
-            }
-        }
+        if (isValid(v[i])) ans++;
+
     }
+    cout << ans;
     return 0;
 }
 
