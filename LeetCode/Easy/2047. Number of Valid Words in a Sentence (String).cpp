@@ -1,5 +1,27 @@
-#include<bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+    int countValidWords(string sentence) {
+    string temp;
+    int ans = 0;
+    vector<string> v;
+
+    for(int i = 0; i < sentence.size(); i++){
+        if (sentence[i] != ' '){
+            temp += sentence[i];
+        }
+        if(sentence[i] != ' ' && sentence[i+1] == ' ' || sentence[i] != ' ' && sentence[i+1] == '\0'){
+            v.push_back(temp);
+            temp = "";
+        }
+
+    }
+    for(int i = 0; i < v.size(); i++){
+        if (isValid(v[i])) ans++;
+
+    }
+    return ans;
+    }
+
 
     bool isValid(string s) {
         int hyphens = 0, n = s.size();
@@ -21,26 +43,4 @@ using namespace std;
         return true;
     }
 
-int main(){
-    string sentence = "!this  1-s b8d!", temp;
-    int ans = 0;
-    vector<string> v;
-
-    for(int i = 0; i < sentence.size(); i++){
-        if (sentence[i] != ' '){
-            temp += sentence[i];
-        }
-        if(sentence[i] != ' ' && sentence[i+1] == ' ' || sentence[i] != ' ' && sentence[i+1] == '\0'){
-            v.push_back(temp);
-            temp = "";
-        }
-
-    }
-    for(int i = 0; i < v.size(); i++){
-        if (isValid(v[i])) ans++;
-
-    }
-    cout << ans;
-    return 0;
-}
-
+};
