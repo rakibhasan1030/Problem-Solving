@@ -1,10 +1,6 @@
-fsdf
-fsdf
-fs
-f
-dsf
-sdf
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
 
-sf
-s
-sf
+    return 0;
+}
