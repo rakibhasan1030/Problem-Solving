@@ -8,5 +8,5 @@ public:
             found = s.find(part);
     }
     return s;
-    }
+}
 };
