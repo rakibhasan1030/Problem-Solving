@@ -12,7 +12,7 @@ public:
 
         for(int i = 0; i <= len1; i++){
             for(int j = 0; j <= len2; j++){
-                if(i == 0 && j == 0){
+                if(i == 0 || j == 0){
                     res[i][j] = 0;
                 }else if (text1[i-1] == text2[j-1]){
                     res[i][j] = res[i-1][j-1] + 1;
