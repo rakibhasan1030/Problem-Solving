@@ -2,9 +2,7 @@
 using namespace std;
 int main(){
     
-    //this is a commit!!!
-    
-     //this is a commit from GitHub!!! 
+    cout << "Hello World!" << endl;
 
     return 0;
 }
