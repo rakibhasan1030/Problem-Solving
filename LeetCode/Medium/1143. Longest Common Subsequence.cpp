@@ -5,7 +5,8 @@ class Solution
 public:
     int longestCommonSubsequence(string text1, string text2)
     {
-        string text1 = "abcde", text2 = "ace";
+        int len1 = text1.size();
+        int len2 = text2.size();
         
     }
 };
