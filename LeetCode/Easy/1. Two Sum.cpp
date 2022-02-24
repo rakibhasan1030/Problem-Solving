@@ -3,10 +3,8 @@ using namespace std;
 class Solution
 {
 public:
-    void twoSum()
+    vector<int> twoSum(vector<int> &nums, int target)
     {
-        int nums[] = {3, 2, 4};
-        int target = 6;
         int n = sizeof(nums) / sizeof(nums[0]);
         vector<int> ans;
 
@@ -23,5 +21,6 @@ public:
                 }
             }
         }
+        return ans;
     }
 };
