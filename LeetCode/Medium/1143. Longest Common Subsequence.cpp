@@ -1,8 +1,10 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-class Solution {
+class Solution
+{
 public:
-    int longestCommonSubsequence(string text1, string text2) {
+    int longestCommonSubsequence(string text1, string text2)
+    {
         string text1 = "abcde", text2 = "ace";
         
     }
