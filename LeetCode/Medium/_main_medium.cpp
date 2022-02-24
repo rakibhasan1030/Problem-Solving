@@ -1,6 +1,9 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#include "1143. Longest Common Subsequence.cpp"
 using namespace std;
-int main(){
-    
+int main()
+{
+    Solution s;
+    cout << s.longestCommonSubsequence("abcde", "ace");
     return 0;
 }
