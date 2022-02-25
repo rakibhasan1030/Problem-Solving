@@ -5,11 +5,13 @@ class Solution
 public:
     vector<string> summaryRanges(vector<int> &nums)
     {
-        /* [ 0, 1, 2, 4, 5, 7 ] */
+        /* [ 0, 1 ] */
 
         int len = nums.size();
         vector<string> ans;
         string arrow = "->";
+
+        cout << len << endl;
 
         if (len < 1)
         {
@@ -22,8 +24,9 @@ public:
         }
         else
         {
-            for (int i = 0; i < len; i++)
+            for (int i = 0; i < len; ++i)
             {
+                cout << "i = " << i << endl;
                 string temp = to_string(nums[i]);
 
                 if (i + 1 < len)
