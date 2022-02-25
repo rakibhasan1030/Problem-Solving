@@ -11,9 +11,8 @@ int main()
     for (size_t i = 0; i < a.size(); i++)
     {
         /* code */
-        cout << a[i] << ", ";
+        cout << a[i] << "   ";
     }
-    
 
     return 0;
 }
