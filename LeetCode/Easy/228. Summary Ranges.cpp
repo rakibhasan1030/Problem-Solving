@@ -40,4 +40,4 @@ public:
         }
         return ans;
     }
-};ZZ
+};
