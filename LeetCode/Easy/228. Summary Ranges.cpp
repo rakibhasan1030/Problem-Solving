@@ -25,9 +25,13 @@ public:
             for (int i = 0; i < len; i++)
             {
                 string temp = to_string(nums[i]);
-                while (nums[i] + 1 == nums[i + 1])
+
+                if (i + 1 < len)
                 {
-                    i++;
+                    while (nums[i] + 1 == nums[i + 1])
+                    {
+                        i++;
+                    }
                 }
                 if (temp != to_string(nums[i]))
                 {
