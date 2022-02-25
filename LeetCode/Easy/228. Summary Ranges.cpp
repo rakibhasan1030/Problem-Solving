@@ -11,8 +11,6 @@ public:
         vector<string> ans;
         string arrow = "->";
 
-        cout << len << endl;
-
         if (len < 1)
         {
             return ans;
@@ -24,24 +22,19 @@ public:
         }
         else
         {
-            for (int i = 0; i < len; ++i)
+            for (int i = 0; i < len; i++)
             {
-                cout << "i = " << i << endl;
                 string temp = to_string(nums[i]);
 
-                if (i + 1 < len)
+                while (i + 1 < len && nums[i] + 1 == nums[i + 1])
                 {
-                    while (nums[i] + 1 == nums[i + 1])
-                    {
-                        i++;
-                    }
+                    i++;
                 }
                 if (temp != to_string(nums[i]))
                 {
                     temp += arrow + to_string(nums[i]);
                 }
                 ans.push_back(temp);
-                cout << "i = " << i << endl;
                 temp = "";
             }
         }
