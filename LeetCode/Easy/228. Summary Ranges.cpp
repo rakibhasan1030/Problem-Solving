@@ -3,6 +3,8 @@ using namespace std;
 class Solution {
 public:
     vector<string> summaryRanges(vector<int>& nums) {
+        /* [ 0, 1, 2, 4, 5, 7 ] */
+        
         int len = nums.size();
         vector<string> ans;
         string arrow = "->";
