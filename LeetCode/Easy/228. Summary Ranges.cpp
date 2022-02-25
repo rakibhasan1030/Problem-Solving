@@ -5,7 +5,7 @@ class Solution
 public:
     vector<string> summaryRanges(vector<int> &nums)
     {
-        /* [ 0, 2, 3, 4, 6, 8, 9 ] */
+        /* [ 0, 1, 2, 4, 5, 7 ] */
 
         int len = nums.size();
         vector<string> ans;
@@ -34,10 +34,10 @@ public:
                     temp += arrow + to_string(nums[i]);
                 }
                 ans.push_back(temp);
-                // cout << temp << endl;
+                cout << "i = " << i << endl;
                 temp = "";
             }
         }
         return ans;
     }
-};
+};ZZ
