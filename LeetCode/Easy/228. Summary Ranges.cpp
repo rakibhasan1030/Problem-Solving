@@ -4,7 +4,8 @@ class Solution {
 public:
     vector<string> summaryRanges(vector<int>& nums) {
         
-        int len = nums.length();
+        int len = nums.size();
+        
 
 
     }
