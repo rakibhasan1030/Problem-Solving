@@ -29,8 +29,10 @@ public:
                 {
                     i++;
                 }
-                
-                temp += arrow + to_string(nums[i]);
+                if (temp != to_string(nums[i]))
+                {
+                    temp += arrow + to_string(nums[i]);
+                }
                 ans.push_back(temp);
                 // cout << temp << endl;
                 temp = "";
