@@ -7,9 +7,9 @@ public:
     {
         int len = nums.size();
         if(len <= 1){
-            retutn len; 
+            return len; 
         }else{
-            
+
         }
     }
 };
