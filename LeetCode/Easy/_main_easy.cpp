@@ -1,18 +1,12 @@
 #include <bits/stdc++.h>
-#include "228. Summary Ranges.cpp"
+#include "485. Max Consecutive Ones(Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    vector<string> a;
-    vector<int> nums = {0, 1};
-    a = s.summaryRanges(nums);
-
-    for (size_t i = 0; i < a.size(); i++)
-    {
-        /* code */
-        cout << a[i] << "   ";
-    }
-
+    int a;
+    vector<int> nums = {1, 1, 0, 1, 1, 1};
+    a = s.findMaxConsecutiveOnes(nums);
+    cout << "Ans = " << a << endl;
     return 0;
 }
