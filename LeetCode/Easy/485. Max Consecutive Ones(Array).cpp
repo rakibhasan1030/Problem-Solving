@@ -9,7 +9,9 @@ public:
         if(len <= 1){
             return len; 
         }else{
-
+            for (int i = 0; i < len; i++){
+                
+            }
         }
     }
 };
