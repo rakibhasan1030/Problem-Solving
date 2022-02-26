@@ -5,31 +5,11 @@ class Solution
 public:
     int findMaxConsecutiveOnes(vector<int> &nums)
     {
-        // nums = [ 1, 0, 1, 1, 0, 1 ]
-        int len = nums.size();
-        int res;
-        if (len <= 1)
-        {
-            return len;
+        int m = 0, ones = 0;
+        for (auto num : nums){
+            num == 1 ? ones++ : ones = 0;
+            m = max(m, ones);
         }
-        else
-        {
-            for (int i = 0; i < len; i++)
-            {
-                cout << "FOR (i) = " << i << endl;
-                res = 1;
-                while (i + 1 <= len && nums[i] == nums[i + 1])
-                {
-                    /* code */
-                    res++;
-                    cout << "i = " << i << "   :   "
-                         << "res = " << res << endl;
-                    i++;
-                }
-                cout << endl;
-                cout << endl;
-            }
-        }
-        return res;
+        return m;
     }
 };
