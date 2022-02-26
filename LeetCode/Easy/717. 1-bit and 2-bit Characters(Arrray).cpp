@@ -5,13 +5,14 @@ class Solution
 public:
     bool isOneBitCharacter(vector<int> &bits)
     {
+        int len = bits.size();
         bool ans = false;
-        for (int i = 0; i < bits.size(); i++)
+        for (int i = 0; i < len; i++)
         {
-            if (bits.size() - 1)
+            if (i == len - 1)
                 ans = true;
             if (bits[i] == 1)
-                i++;
+                i += 1;
         }
         return ans;
     }
