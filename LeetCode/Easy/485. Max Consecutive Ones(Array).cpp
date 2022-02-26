@@ -5,7 +5,7 @@ class Solution
 public:
     int findMaxConsecutiveOnes(vector<int> &nums)
     {
-        // nums = [ 1, 1, 0, 1, 1, 1 ]
+        // nums = [ 1, 0, 1, 1, 0, 1 ]
         int len = nums.size();
         int res;
         if (len <= 1)
