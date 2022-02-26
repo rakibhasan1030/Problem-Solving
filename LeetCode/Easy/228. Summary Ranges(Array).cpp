@@ -5,8 +5,6 @@ class Solution
 public:
     vector<string> summaryRanges(vector<int> &nums)
     {
-        /* [ 0, 1 ] */
-
         int len = nums.size();
         vector<string> ans;
         string arrow = "->";
