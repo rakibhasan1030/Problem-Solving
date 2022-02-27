@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
-#include "674. Longest Continuous Increasing Subsequence(Array).cpp"
+#include "941. Valid Mountain Array(Array).cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    int a;
-    vector<int> nums = {1, 3, 5, 4, 2, 3, 4, 5};
-    a = s.findLengthOfLCIS(nums);
+    bool a;
+    vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 2, 1};
+    a = s.validMountainArray(nums);
     cout << "Ans = " << a << endl;
     return 0;
 }
