@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
-#include "941. Valid Mountain Array(Array).cpp"
+#include "1018. Binary Prefix Divisible By 5(Array).cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    bool a;
+    vector<bool> a;
     vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 2, 1};
-    a = s.validMountainArray(nums);
-    cout << "Ans = " << a << endl;
+    a = s.prefixesDivBy5(nums);
+    //cout << "Ans = " << a << endl;
     return 0;
 }
