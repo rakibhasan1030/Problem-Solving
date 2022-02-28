@@ -1,13 +1,14 @@
 #include <bits/stdc++.h>
-#include "1018. Binary Prefix Divisible By 5(Array).cpp"
+#include "1184. Distance Between Bus Stops(Array).cpp"
 using namespace std;
 
 int main()
 {
     Solution s;
-    vector<bool> a;
-    vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 2, 1};
-    a = s.prefixesDivBy5(nums);
-    //cout << "Ans = " << a << endl;
+    int a;
+    vector<int> distance  = {1,2,3,4};
+    int start = 0, destination = 1;
+    a = s.distanceBetweenBusStops(distance , start, destination);
+    cout << "Ans = " << a << endl;
     return 0;
 }
