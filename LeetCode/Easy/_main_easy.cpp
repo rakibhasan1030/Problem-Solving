@@ -4,6 +4,6 @@ using namespace std;
 int main()
 {
     Solution s;
-    
+    vector<int> arr = {1, 2, 2, 6, 6, 6, 6, 7, 10};
     return 0;
 }
