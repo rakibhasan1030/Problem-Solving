@@ -4,6 +4,9 @@ using namespace std;
 int main()
 {
     Solution s;
-    vector<int> arr = {1, 2, 2, 6, 6, 6, 6, 7, 10};
+    int ans;
+    vector<int> arr = {1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12};
+    ans = s.findSpecialInteger(arr);
+    cout << ans << endl;
     return 0;
 }
