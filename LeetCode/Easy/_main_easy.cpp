@@ -5,7 +5,8 @@ int main()
 {
     Solution s;
     vector<int> ans;
-    vector<int> arr = {17, 18, 5, 4, 6, 1};
+    //vector<int> arr = {17, 18, 5, 4, 6, 1};
+    vector<int> arr = {400};
     ans = s.replaceElements(arr);
     return 0;
 }
