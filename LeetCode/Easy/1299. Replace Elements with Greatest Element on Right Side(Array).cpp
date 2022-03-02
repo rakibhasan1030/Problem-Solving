@@ -5,7 +5,7 @@ class Solution
 public:
     vector<int> replaceElements(vector<int> &arr)
     {
-        //[ 17, 18, 5, 4, 6, 1 ]
+        //[ 25, 25, 38, 20, 15, 40 ]
         vector<int> ans;
         int n = arr.size();
         int temp = 0;
@@ -14,13 +14,15 @@ public:
             if(i == n - 1){
                 ans.push_back(-1);
             }else{
-                cout << "i = " << i << endl;
+                //cout << "i = " << i << endl;
                 temp = arr[i+1];
                 int j = i;
                 int s = n-1;
-                for(int k = i+2; k < n - 1; k++){
+                for(int k = i+2; k < n; k++){
+                    //cout << "arr[k] = " << arr[k] << endl;
                     if(arr[k] > temp){
                         temp = arr[k];
+                        //cout << "temp = " << temp << endl;
                     }
                 }
                 //cout << temp << endl;
