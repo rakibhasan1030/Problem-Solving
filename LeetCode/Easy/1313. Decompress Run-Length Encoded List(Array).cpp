@@ -1,11 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Solution {
+class Solution
+{
 public:
-    vector<int> decompressRLElist(vector<int>& nums) {
-        // [ 1 2 3 4]
+    vector<int> decompressRLElist(vector<int> &nums)
+    {
+        vector<int> ans;
         int len = nums.size();
-        cout << len;
-
+        for (int i = 0; i < len;)
+        {
+            int freq = nums[i];
+            int val = nums[i + 1];
+            for (int j = 0; j < freq; j++)
+            {
+                ans.push_back(val);
+            }
+            i += 2;
+        }
+        return ans;
     }
 };
