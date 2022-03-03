@@ -3,8 +3,7 @@ using namespace std;
 class Solution {
 public:
     vector<int> decompressRLElist(vector<int>& nums) {
-        cout << "Hi" << endl;
-
-        // spin
+        // [ 1 2 3 4]
+        
     }
 };
