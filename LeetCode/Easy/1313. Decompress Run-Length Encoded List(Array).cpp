@@ -7,7 +7,7 @@ public:
     {
         vector<int> ans;
         int len = nums.size();
-        for (int i = 0; i < len;)
+        for (int i = 0; i < len; i+=2)
         {
             int freq = nums[i];
             int val = nums[i + 1];
@@ -15,7 +15,6 @@ public:
             {
                 ans.push_back(val);
             }
-            i += 2;
         }
         return ans;
     }
