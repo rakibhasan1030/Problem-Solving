@@ -3,6 +3,9 @@ using namespace std;
 class Solution {
 public:
     vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
-        
+        vector<bool> ans;
+        for (auto i : candies){
+            
+        }
     }
 };
