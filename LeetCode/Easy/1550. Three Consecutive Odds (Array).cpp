@@ -8,6 +8,6 @@ public:
             if (c == 3) return true;
             c = n % 2 == 1 ? c+=1 : 0;
         }
-        return c == 3
+        return c == 3;
     }
 };
