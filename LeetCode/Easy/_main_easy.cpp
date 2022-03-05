@@ -1,18 +1,11 @@
 #include <bits/stdc++.h>
-#include "1431. Kids With the Greatest Number of Candies (Array).cpp"
+#include "1437. Check If All 1's Are at Least Length K Places Away (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    int extraCandies = 1;
-    vector<int> candies = {4, 2, 1, 1, 2};
-    vector<bool> ans = s.kidsWithCandies(candies, extraCandies);
-
-    cout << "[ ";
-    for (auto i : ans)
-    {
-        cout << i << " ";
-    }
-    cout << " ]";
+    vector<int> nums = {1, 0, 0, 0, 1, 0, 0, 1};
+    int k = 2;
+    cout << "Ans : " << s.kidsWithCandies(nums, k);
     return 0;
 }
