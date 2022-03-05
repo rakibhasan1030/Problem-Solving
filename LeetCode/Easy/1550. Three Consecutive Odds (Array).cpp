@@ -3,21 +3,11 @@ using namespace std;
 class Solution{
 public:
     bool threeConsecutiveOdds(vector<int> &arr){
-        bool ans = false;
-        int c = 1;
-        for (int i = 1; i < arr.size(); i++){
-            if (c != 3){
-                if (arr[i - 1] % 2 == 1 && arr[i] % 2 == 1){
-                    ans = true;
-                    c++;
-                }
-                else{
-                    c = 1;
-                }
-            }else{
-                break;
-            }
+        int c;
+        for(auto n : arr){
+            if (c == 3) return true;
+            c = n % 2 == 1 ? c+=1 : 0;
         }
-        return c >= 3 ? ans : false;
+        return c == 3
     }
 };
