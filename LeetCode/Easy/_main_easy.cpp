@@ -4,6 +4,8 @@ using namespace std;
 int main()
 {
     Solution s;
+    vector<int>& nums = {2,5,1,3,4,7};
+    int n = 3;
     
     return 0;
 }
