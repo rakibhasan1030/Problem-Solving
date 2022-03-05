@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
-#include "1184. Distance Between Bus Stops (Array).cpp"
+#include "1550. Three Consecutive Odds (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    vector<int> arr = {1, 2, 34, 3, 4, 5, 7, 23, 12};
-    cout << "Ans : " << s.distanceBetweenBusStops(arr) << endl;
+    vector<int> arr = {2, 6, 4, 1};
+    cout << "Ans : " << s.threeConsecutiveOdds(arr) << endl;
     return 0;
 }
