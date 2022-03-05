@@ -6,6 +6,6 @@ int main()
     Solution s;
     vector<int> nums = {1, 0, 0, 0, 1, 0, 0, 1};
     int k = 2;
-    cout << "Ans : " << s.kidsWithCandies(nums, k);
+    cout << "Ans : " << s.kLengthApart(nums, k);
     return 0;
 }
