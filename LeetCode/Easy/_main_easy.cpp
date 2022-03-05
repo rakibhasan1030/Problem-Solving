@@ -4,11 +4,15 @@ using namespace std;
 int main()
 {
     Solution s;
-    int extraCandies = 3;
-    vector<int> candies = {2, 3, 5, 1, 3};
+    int extraCandies = 1;
+    vector<int> candies = {4, 2, 1, 1, 2};
     vector<bool> ans = s.kidsWithCandies(candies, extraCandies);
-    for(auto i : ans){
-       cout << i <<  "   ";
+
+    cout << "[ ";
+    for (auto i : ans)
+    {
+        cout << i << " ";
     }
+    cout << " ]";
     return 0;
 }
