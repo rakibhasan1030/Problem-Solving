@@ -1,10 +1,14 @@
 #include <bits/stdc++.h>
-#include "1550. Three Consecutive Odds (Array).cpp"
+#include "1431. Kids With the Greatest Number of Candies (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    vector<int> arr = {2, 6, 4, 1};
-    cout << "Ans : " << s.threeConsecutiveOdds(arr) << endl;
+    int extraCandies = 3;
+    vector<int> candies = {2, 3, 5, 1, 3};
+    vector<bool> ans = s.kidsWithCandies(candies, extraCandies);
+    for(auto i : ans){
+       cout << i <<  "   ";
+    }
     return 0;
 }
