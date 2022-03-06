@@ -3,12 +3,18 @@ using namespace std;
 class Solution {
 public:
     int countGoodRectangles(vector<vector<int>>& rectangles) {
-        vector<int> unique; 
-        int m; 
-        for(auto rec : rectangles){
+        vector<int> rect, ans;
+        int res = 0;
+        for(auto r : rectangles){
             int j = 0;
-            cout << max(rec[j], rec[j+1]);
-            cout<<endl;
+            rect.push_back(min(r[j], r[j+1]));
         }
+        int mx = *max_element(rect.begin(), rect.end());
+        for(auto r : rect){
+            if (mx == r){
+                res++;
+            }
+        }
+        return res;
     }
 };
