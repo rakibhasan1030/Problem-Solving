@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "1725. Number Of Rectangles That Can Form The Largest Square (Array).cpp"
+#include "1752. Check if Array Is Sorted and Rotated (Array).cpp"
 using namespace std;
 int main()
 {
