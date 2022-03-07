@@ -3,7 +3,6 @@ using namespace std;
 class Solution{
 public:
     vector<int> decrypt(vector<int> &code, int k){
-        // 2, 4, 9, 3
         int len = code.size();
         vector<int> res(len);
         if(k > 0){
