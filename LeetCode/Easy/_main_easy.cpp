@@ -5,6 +5,6 @@ int main()
 {
     Solution s;
     vector<int> n = {3, 4, 5, 1, 2};
-
+    bool ans = s.check(n)
     return 0;
 }
