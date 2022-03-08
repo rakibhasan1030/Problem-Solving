@@ -13,7 +13,7 @@ public:
         }
 
         for (auto i : n){
-            cout << i << "   ";
+            cout << i << "  ";
         }
     }
 };
