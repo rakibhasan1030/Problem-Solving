@@ -5,9 +5,7 @@ int main()
 {
     Solution s;
     int x = 3, y = 4;
-    vector<vector<int>>{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
-    
-
-
+    vector<vector<int>> points = {{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
+    s.nearestValidPoint(x, y, points);
     return 0;
 }
