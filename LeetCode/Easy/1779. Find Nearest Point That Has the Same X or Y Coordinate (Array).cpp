@@ -9,7 +9,7 @@ public:
             for (int j = 0; j < points[i].size() - 1; j++){
 
                 if(x == points[i][j] || y == points[i][j+1]){
-                    cout << points[i][j] << "    ";
+                    cout <<"[ " << points[i][j] << "  " << points[i][j+1] << " ]";
                 }
                 
             }
