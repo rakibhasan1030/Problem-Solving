@@ -8,12 +8,12 @@ public:
 
             for (int j = 0; j < points[i].size() - 1; j++){
 
-                if(x == points[j] || y == points[j+1]){
-                    
+                if(x == points[i][j] || y == points[i][j+1]){
+                    cout << points[i][j] << "    ";
                 }
-
+                
             }
-
+            cout << endl;
         }
     }
 };
