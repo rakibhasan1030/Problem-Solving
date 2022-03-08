@@ -6,8 +6,12 @@ public:
         vector<vector<int>> validCoordinates;
         for(int i = 0; i < points.size(); i++){
 
-            for (int j = 0; j < points[i].size(); j++){
-                
+            for (int j = 0; j < points[i].size() - 1; j++){
+
+                if(x == points[j] || y == points[j+1]){
+                    
+                }
+
             }
 
         }
