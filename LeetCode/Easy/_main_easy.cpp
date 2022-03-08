@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
-#include "1652. Defuse the Bomb (Array).cpp"
+#include "1779. Find Nearest Point That Has the Same X or Y Coordinate (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    vector<int> code = {2, 4, 9, 3};
-    int k = -2;
-    s.decrypt(code, k);
+    int x = 3, y = 4;
+    vector<vector<int>>{{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
+    
+
+
     return 0;
 }
