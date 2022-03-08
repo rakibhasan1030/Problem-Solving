@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     Solution s;
-    vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    vector<int> nums = {1, 2, 10, 5, 7};
     int target = 1, start = 0;
-    cout << s.getMinDistance(nums, target, start) << endl;
+    cout << s.canBeIncreasing(nums) << endl;
     return 0;
 }
