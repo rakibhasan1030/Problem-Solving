@@ -1,11 +1,9 @@
 #include <bits/stdc++.h>
-#include "1779. Find Nearest Point That Has the Same X or Y Coordinate (Array).cpp"
+#include "1800. Maximum Ascending Subarray Sum (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    int x = 3, y = 4;
-    vector<vector<int>> points = {{1, 2}, {3, 1}, {2, 4}, {2, 3}, {4, 4}};
-    s.nearestValidPoint(x, y, points);
+
     return 0;
 }
