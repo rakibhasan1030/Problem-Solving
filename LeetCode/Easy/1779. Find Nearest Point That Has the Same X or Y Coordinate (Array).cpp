@@ -16,7 +16,6 @@ public:
                     }
                 }
             }
-            cout << "ans = " << ans << endl;
         }
         return ans;
     }
