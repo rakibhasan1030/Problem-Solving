@@ -1,15 +1,10 @@
 #include <bits/stdc++.h>
-#include "1929. Concatenation of Array (Array).cpp"
+#include "2016. Maximum Difference Between Increasing Elements (Array).cpp"
 using namespace std;
 int main()
 {
     Solution s;
-    vector<int> nums = {1, 2, 1};
-    vector<int> n = s.getConcatenation(nums);
-    for (auto i : n)
-    {
-        cout << i << " ";
-    }
-    
+    vector<int> nums = {7, 1, 5, 4};
+
     return 0;
 }
