@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    
+    string a = "aba", b = "cdc";
+    cout << "ANS : " << s.findLUSlength(a, b);
     return 0;
 }
