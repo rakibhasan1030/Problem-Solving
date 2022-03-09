@@ -3,17 +3,16 @@ using namespace std;
 class Solution {
 public:
     bool canBeIncreasing(vector<int>& nums) {
-        //1,2,10,5,7
-        vector<int> n;
-        n.push_back(nums[0]);
-        for(int i = 0; i < nums.size()-1; i++){
-           if( nums[i] < nums[i+1]){
-               n.push_back(nums[i]);
-           } else continue;
+        int count = 0;
+        for (int i = 1; i < nums.size(); i++){
+            if (nums[i] <= nums[i-1]){
+                if(count == 1) return false;
+                count++;
+                if(i > 1 && nums[i] <= nums[i-2]){
+                    nums[i] = nums[i-1];
+                }
+            }
         }
-
-        for (auto i : n){
-            cout << i << "  ";
-        }
+        return true;
     }
 };
