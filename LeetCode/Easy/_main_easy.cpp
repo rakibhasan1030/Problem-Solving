@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    vector<int> nums = {7, 1, 5, 4};
+    vector<int> nums = {0, 1, 2};
     cout << s.smallestEqual(nums);
     return 0;
 }
