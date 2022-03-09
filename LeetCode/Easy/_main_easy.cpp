@@ -5,6 +5,6 @@ int main()
 {
     Solution s;
     vector<int> nums = {7, 1, 5, 4};
-    cout << s.maximumDifference(nums);
+    cout << s.smallestEqual(nums);
     return 0;
 }
