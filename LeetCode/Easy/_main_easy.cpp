@@ -5,6 +5,11 @@ int main()
 {
     Solution s;
     vector<int> nums = {1, 2, 1};
-    s.getConcatenation(nums);
+    vector<int> n = s.getConcatenation(nums);
+    for (auto i : n)
+    {
+        cout << i << " ";
+    }
+    
     return 0;
 }
