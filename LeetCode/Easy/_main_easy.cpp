@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     Solution s;
-    
+    vector<int> nums = {1, 2, 1};
+    s.getConcatenation(nums);
     return 0;
 }
