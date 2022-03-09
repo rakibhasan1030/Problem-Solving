@@ -1,16 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Solution{
+class Solution {
 public:
-    vector<int> getConcatenation(vector<int>& nums){
-        vector<int> ans;
-        int len = 2;
-        while (len){
-            for(auto n : nums){
-                ans.push_back(n);
-            }
-            len--;
+    vector<int> getConcatenation(vector<int>& nums) {
+        int n = nums.size();
+        for(int i = 0; i < n; i++){
+            nums.push_back(nums[i]);
         }
-        return ans;
+        return nums;
     }
 };
