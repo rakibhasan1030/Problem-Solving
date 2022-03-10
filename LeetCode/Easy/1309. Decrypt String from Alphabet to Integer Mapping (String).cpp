@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string freqAlphabets(string s) {
     string ans = "";
     int len = s.size();
 
@@ -37,3 +42,5 @@
 
     }
     return ans;
+    }
+};
