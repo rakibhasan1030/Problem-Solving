@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string sortSentence(string s) {
     map<int, string>mp;
     string w="";
     s.push_back(' ');
@@ -29,3 +34,5 @@
     }
     ans.pop_back();
     return ans;
+    }
+};
