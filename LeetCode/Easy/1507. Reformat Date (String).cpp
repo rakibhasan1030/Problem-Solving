@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string reformatDate(string date) {
     string temp, _day, _month, _year, ans;
     int n = 0;
     map<string, string>::iterator itr;
@@ -47,3 +52,5 @@
     }
     ans = _day.size() > 1 ? _year + _month + _day : _year + _month + "0" + _day;
     return ans;
+    }
+};
