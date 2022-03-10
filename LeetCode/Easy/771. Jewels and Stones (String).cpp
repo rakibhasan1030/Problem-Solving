@@ -13,7 +13,6 @@ public:
                 c++;
             }
         }
-
     }
     return c;
     }
