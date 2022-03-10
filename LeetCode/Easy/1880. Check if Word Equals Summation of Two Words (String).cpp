@@ -1,15 +1,20 @@
-    string f, s, t;
-    for (auto i : firstWord){
-        f = f + to_string(((int)i - (int)97));
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    bool checkZeroOnes(string s) {
+    int n, ones = 0, maxOnes = 0, zeros = 0, maxZeros = 0;
+    for(int i = 0; i < s.size(); i++){
+        if(s[i] == '1'){
+            zeros = 0;
+            ones++;
+            maxOnes = max(maxOnes, ones);
+        }else{
+            ones = 0;
+            zeros++;
+            maxZeros = max(maxZeros, zeros);
+        }
     }
-    for (auto i : secondWord){
-        s = s + to_string(((int)i - (int)97));
+    return maxOnes > maxZeros ? true : false;
     }
-    for (auto i : targetWord){
-        t = t + to_string(((int)i - (int)97));
-    }
-
-    if((stoi(f) + stoi(s)) == stoi(t)){
-        return true;
-    }
-    return false;   
+};
