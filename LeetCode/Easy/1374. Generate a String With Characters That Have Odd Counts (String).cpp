@@ -1,3 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string generateTheString(int n) {
+        
     string ans = "";
     if(n%2==0)
     {
@@ -15,3 +21,8 @@
         }
     }
     return ans;
+        
+        
+        
+    }
+};
