@@ -5,7 +5,8 @@
 # On the other hand if it starts with 1 then all the even position contain 1 and also the odd position contain 0. and similarly,
   For i, if s[ i ] do not follow the rule then we increase x
 # After that we find and return the minimum between x and y */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int minOperations(string s){
