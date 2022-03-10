@@ -5,6 +5,8 @@ After that, checked if s[ i ] is equal to s[ i - 1 ] and also s[ i ] not equal t
 Then, checked the difference between first and last position, if the result is greater or equal 2 then it'll contain at least char.
 And pushed the value to a vector. and returned! */
 
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     vector<vector<int>> largeGroupPositions(string s) {
