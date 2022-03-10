@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string replaceDigits(string s) {
     string ans = "";
     for(int i = 0; i < s.size(); ++i)
     {
@@ -15,4 +20,6 @@
             ans.push_back(char(y));
         }
     }
-        return ans;
+    return ans;
+    }
+};
