@@ -5,6 +5,8 @@
   then i also check the next position (i+1) is a space or null (end of string) so that i can find segment and increase word
 # Finally, return word */
 
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int countSegments(string s) {
