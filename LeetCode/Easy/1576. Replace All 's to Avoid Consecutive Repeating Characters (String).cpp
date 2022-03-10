@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;class Solution {
+using namespace std;
+class Solution {
 public:
     string modifyString(string s) {        
         for(int i = 0; i < s.length(); i++){
