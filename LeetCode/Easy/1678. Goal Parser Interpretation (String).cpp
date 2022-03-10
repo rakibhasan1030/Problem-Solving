@@ -1,3 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+    string interpret(string command) {
     string str = "";
     int commandSize = command.size();
     for(int i = 0; i < commandSize; i++)
@@ -19,3 +24,5 @@
         }
     }
     return str;
+    }
+};
