@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
-#include "521. Longest Uncommon Subsequence I (String).cpp"
 using namespace std;
+#include "521. Longest Uncommon Subsequence I (String).cpp"
 int main()
 {
     Solution s;
-    
+
     return 0;
 }

@@ -1,1 +1,1 @@
-s.findNumbers(nums)
+canBeIncreasing

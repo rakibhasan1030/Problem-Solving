@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "random": "cpp",
+        "iostream": "cpp",
+        "ratio": "cpp",
+        "ostream": "cpp",
+        "*.tcc": "cpp",
+        "regex": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "functional": "cpp"
+    }
+}
