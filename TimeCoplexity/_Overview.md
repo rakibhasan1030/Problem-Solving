@@ -94,6 +94,10 @@ Big O notation gives an upper limit for how long or how much space an algorithm 
 
 > Note: Those constant multiples can get *really* large, meaning sometimes an O(n) algorithm will run faster than an O(log (n)) algorithm.
 
+**Graph: how the number of operations (time) grows with the number of input elements for various orders of complexity**
+
+<img src="https://he-s3.s3.amazonaws.com/media/uploads/ece920b.png">
+
 
 
 ### Rules for Evaluating Complexity
