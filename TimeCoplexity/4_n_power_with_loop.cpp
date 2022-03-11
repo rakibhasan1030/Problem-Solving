@@ -6,8 +6,8 @@ int main(){
     cin>> n;
 
     for(int i = 0; i < n; i++){
-        for(int i = 0; i < n; i++){
-            result = result + i; // here number of operation is dependent on input, if the input is 5 then the loop will execute 5x5 = 25 times
+        for(int j = 0; j < n; j++){
+            result = result + 1; // here number of operation is dependent on input, if the input is 5 then the loop will execute 5x5 = 25 times
         } 
     }
     cout << result; //this is not a complexity, because, it'll execute once
