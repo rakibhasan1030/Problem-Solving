@@ -1,11 +1,14 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int m, n, result;
 
-    m = 5; // first assignment operatoion
-    n = 10; // second assignment operatoion
+    m = 5;          // first assignment operatoion
+    n = 10;         // second assignment operatoion
     result = m + n; // third assignment operatoion and a mathmatical operation which is sum of (m+n)
+
+    cout << result;
 
     return 0;
 }
