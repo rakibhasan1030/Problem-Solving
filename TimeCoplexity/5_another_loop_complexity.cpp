@@ -27,5 +27,5 @@ int main(){
     So, time complexity of this program is Big O(n^2) or O(n^2) or Order(n^2). We cannot calculate O(n^2 + n) this way.
     We've to remember, if we see multiple complexity in a program, we see which one is the worse and that'll be the answer of complexity.
     Similarly, suppose, we have O(n!+n^3+n^2+logn) complexity in a program, then the complexity of that program will be n!, because n! is
-    the worse case amoung all of the
+    the worse case amoung all of them.
 */
