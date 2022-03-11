@@ -15,6 +15,6 @@ int main(){
 
 /*
     In this program total operation number is n. Beacause, here number of operation is dependent on input.
-    Input is not constanst. So, time complexity of this program is O(n).
+    Input is not constanst. So, time complexity of this program is Big O(n) or O(n) or Order(n) or linear.
     Time complexity of a program will always Big O(n) or O(n) or Order(n), when the number of operation is dependent on input of a program.
 */
