@@ -17,6 +17,6 @@ int main(){
 
 /*
     In this program total operation number is n. Beacause, here number of operation is dependent on input.
-    Input is not constanst. So, time complexity of this program is Big O(n^2) or O(n^2) or Order(n^2)\.
+    Input is not constanst. So, time complexity of this program is Big O(n^2) or O(n^2) or Order(n^2).
     Same way, if there is 3 nested loop, then the complexity will be O(n^3)
 */
