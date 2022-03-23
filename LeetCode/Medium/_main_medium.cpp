@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include"328. Odd Even Linked List (Linked List).cpp"
 using namespace std;
 
 struct node
@@ -59,6 +60,8 @@ int main()
     cout << endl;
 
     /* call desire problems method */
+    Solution s;
+    s.oddEvenList(head);
 
     display(head);
     cout << endl;
