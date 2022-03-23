@@ -61,7 +61,7 @@ int main()
 
     /* call desire problems method */
     Solution s;
-    s.oddEvenList(head);
+    head = s.oddEvenList(head);
 
     display(head);
     cout << endl;
