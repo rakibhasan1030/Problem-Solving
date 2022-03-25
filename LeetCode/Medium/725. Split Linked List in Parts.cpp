@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 struct ListNode {
     int val;
     ListNode *next;
@@ -32,7 +30,7 @@ public:
         }
         
         int partsLen = len / k; /* How many child remain in parent list */
-        int dis = len % k; /* modulus of division, which will be distributed form ascending until its 0 */
+        int dis = len % k; /* modulus of division, which will be distributed form ascending until its */
         
         ListNode* temp = head;
         ListNode* prev = NULL; 
