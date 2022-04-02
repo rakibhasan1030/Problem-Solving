@@ -4,6 +4,6 @@ using namespace std;
 int main()
 {
     Solution s;
-
+    cout << s.validPalindrome("deeee");
     return 0;
 }
