@@ -22,5 +22,5 @@ public:
         return ans;
     }
 };
-/*DETAIL EXPLANATION : https://youtu.be/esu6uExE0qg */
+/* DETAIL EXPLANATION : https://youtu.be/esu6uExE0qg */
 
