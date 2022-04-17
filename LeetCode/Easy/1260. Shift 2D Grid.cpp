@@ -8,7 +8,7 @@ public:
         for(int i = 0; i < r; i++){
             for (int j = 0; j < c; j++){
                 
-                int newPos = ( ( (i*c)+j) + k ) % (r *c ); /*   >> (i*c)+j is for find index in 1D array
+                int newPos = ( ( (i*c)+j) + k ) % (r * c ); /*   >> (i*c)+j is for find index in 1D array
                                                                 >> adding k is shifting the value to the k position, 
                                                                    so after adding k, it'll be new position in 1D array 
                                                                 >> (r * c) is for outOfBoundExeption of the array */
