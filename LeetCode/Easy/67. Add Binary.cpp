@@ -19,5 +19,5 @@ public:
         count++;
     }
     return sum; 
-    }
+}
 };
