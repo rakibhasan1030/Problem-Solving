@@ -6,7 +6,6 @@ public:
     int n, a = 0, l = 0;
     bool ans = true;
     n = s.size();
-
     for(int i = 0; i < n; i++){
         if(s[i] == 'A'){
             a++;
