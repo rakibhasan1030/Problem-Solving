@@ -3,9 +3,11 @@ using namespace std;
 class Solution {
 public:
     string reformatDate(string date) {
+        
     string temp, _day, _month, _year, ans;
+
     int n = 0;
-    
+
     map<string, string>::iterator itr;
     map<string, string> month;
     month.insert(pair<string, string>("Jan", "01"));
