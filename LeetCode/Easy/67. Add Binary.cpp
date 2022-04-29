@@ -17,6 +17,7 @@ public:
         carry = (x+y+carry) / 2;
         
         count++;
+        
     }
     return sum; 
 }
