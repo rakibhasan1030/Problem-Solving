@@ -12,7 +12,6 @@ public:
         {
             ans.push_back(ch);
             x = int(ch);
-
         }
         else
         {
