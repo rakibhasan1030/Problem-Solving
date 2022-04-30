@@ -5,7 +5,7 @@ public:
     string sortSentence(string s) {
     map<int, string>mp;
     string w="";
-    s.push_back(' ');
+    s.push_back(' '); 
     for(auto i : s)
     {
         if (i == ' '){
