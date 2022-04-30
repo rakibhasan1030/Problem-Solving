@@ -11,8 +11,7 @@ public:
             ans.push_back(ch);
             x = int(ch);
         }
-        else
-        {
+        else{
             y = x + (ch - '0');
             ans.push_back(char(y));
         }
