@@ -8,8 +8,7 @@ public:
     {
         int x, y;
         char ch = s[i];
-        if(i % 2 == 0)
-        {
+        if(i % 2 == 0){
             ans.push_back(ch);
             x = int(ch);
         }
