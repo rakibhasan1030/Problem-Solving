@@ -9,5 +9,5 @@ public:
         if(word.find(patterns[i])!= string::npos) c++;
     }
     return c;
-    }
+  }
 };
