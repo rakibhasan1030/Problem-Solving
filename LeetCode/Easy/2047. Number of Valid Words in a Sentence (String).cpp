@@ -22,7 +22,7 @@ public:
 
     }
     return ans;
-    }
+}
 
 
     bool isValid(string s) {
