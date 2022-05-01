@@ -16,5 +16,5 @@ public:
         }
     }
     return maxOnes > maxZeros ? true : false;
-    }
+  }
 };
