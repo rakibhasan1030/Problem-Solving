@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Solution {
+class Solution { 
 public:
     int getMinDistance(vector<int>& nums, int target, int start) {
         int ans = INT_MAX;
