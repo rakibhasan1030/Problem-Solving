@@ -15,7 +15,6 @@ public:
             v.push_back(temp);
             temp = "";
         }
-
     }
     for(int i = 0; i < v.size(); i++){
         if (isValid(v[i])) ans++;
