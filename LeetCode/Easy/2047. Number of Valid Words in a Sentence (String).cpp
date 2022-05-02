@@ -40,7 +40,6 @@ public:
                 hyphens++;
             }
         }
-
         return true;
     }
 
