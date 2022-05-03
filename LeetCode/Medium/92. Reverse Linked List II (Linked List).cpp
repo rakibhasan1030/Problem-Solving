@@ -35,7 +35,6 @@ public:
             
             left++;
         }
-        
         return dummyHead.next;
     }
 };
