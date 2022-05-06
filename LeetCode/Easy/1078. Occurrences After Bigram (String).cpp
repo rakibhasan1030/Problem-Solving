@@ -2,7 +2,7 @@
 using namespace std;
 class Solution {
 public:
-    vector<string> findOcurrences(string text, string first, string second) {
+    vector<string> findOcurrences(string text, string first, string second){
         vector<string>store,ans;
         stringstream ss(text);
         string word;
