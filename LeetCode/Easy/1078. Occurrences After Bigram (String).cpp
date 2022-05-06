@@ -6,11 +6,9 @@ public:
         vector<string>store,ans;
         stringstream ss(text);
         string word;
-        while(ss >> word)
-        {
+        while(ss >> word){
             store.push_back(word);
-        }
-        
+        } 
         int n = store.size();
         for(int i=0;i<n;i++)
         {
