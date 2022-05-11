@@ -28,5 +28,5 @@ public:
         ones = 0;
     }
     return ans;
-    }
+}
 };
