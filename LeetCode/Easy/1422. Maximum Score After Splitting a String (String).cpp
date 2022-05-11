@@ -16,7 +16,7 @@ public:
                 }
             }
 
-            for(int i = 0; i < s.size(); i++){ // RIGHT
+            for(int i = 0; i < s.size(); i++) { // RIGHT
                 if(s[i] == '1'){
                     ones++;
                 }
