@@ -10,7 +10,7 @@ public:
         s.erase(0, 1);
 
         if(s.size() > 0){
-            for(int i = 0; i < x.size(); i++){ // LEFT
+            for(int i = 0; i < x.size(); i++) { // LEFT
                 if(x[i] == '0'){
                     zeros++;
                 }
