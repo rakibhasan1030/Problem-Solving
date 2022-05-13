@@ -12,18 +12,18 @@ public:
     prev_char = '\0';
 
     while(1){ //infinite loop
-        if(text[i] == ' ' || text[i] == '\0'){
+        if(text[i] == ' ' || text[i] == '\0') {
             total_space++;
-            if(prev_char != ' ' && prev_char != '\0'){
+            if(prev_char != ' ' && prev_char != '\0') {
                 s.push_back(temp);
                 total_word ++;
                 temp = "";
             }
-        }else temp += text[i];
+        } else temp += text[i];
         prev_char = text[i];
-        if(text[i] == '\0'){
+        if(text[i] == '\0') {
             break; //break loop
-        } else{
+        } else {
             i++;
         }
     }
