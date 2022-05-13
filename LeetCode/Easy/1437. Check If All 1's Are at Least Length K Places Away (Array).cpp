@@ -14,7 +14,7 @@ public:
                     ans = false;
                     break;
                 }
-            }else if (nums[i] == 1 && pos < 0){
+            }else if (nums[i] == 1 && pos < 0) {
                 pos = i+1;
             }
         }
