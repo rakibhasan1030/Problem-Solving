@@ -34,15 +34,15 @@ public:
         between_space = total_space / (total_word - 1);
         end_space = total_space % (total_word - 1);
 
-        for(int i = 0; i < s.size(); i++){
+        for(int i = 0; i < s.size(); i++) {
             int t = between_space;
             ans += s[i];
-            if(!(i == s.size() - 1)){
+            if(!(i == s.size() - 1)) {
                 while(t){
                     ans += ' ';
                     t--;
                 }
-            }else if (i == s.size()- 1 && end_space > 0){
+            } else if (i == s.size()- 1 && end_space > 0) {
                 while(end_space){
                     ans += ' ';
                     end_space--;
@@ -50,9 +50,9 @@ public:
             }
         }
 
-    }else{
+    } else {
         ans += s[0];
-        while(total_space){
+        while(total_space) {
             ans += ' ';
             total_space--;
         }
