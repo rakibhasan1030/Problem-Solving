@@ -6,12 +6,11 @@ public:
     string str ="";
     for(int i = 0; i < address.size(); i++)
     {
-        if(address[i]=='.'){
+        if(address[i]=='.') {
             str.push_back('[');
             str.push_back('.');
             str.push_back(']');
-        }
-        else{
+        } else {
             str.push_back(address[i]);
         }
     }
