@@ -6,10 +6,10 @@ public:
         int clockwiseDistance = 0, totalDistance = 0;
 
         for(int i = 0; i < distance.size(); i++){
-            if (start < destination && (i >= start && i < destination)){
+            if (start < destination && (i >= start && i < destination)) {
                 clockwiseDistance  += distance[i];
             }
-            if (start > destination && (i >= start || i < destination)){
+            if (start > destination && (i >= start || i < destination)) {
                 clockwiseDistance  += distance[i];
             }
             totalDistance += distance[i];
