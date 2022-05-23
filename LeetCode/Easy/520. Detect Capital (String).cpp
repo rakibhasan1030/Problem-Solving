@@ -8,7 +8,7 @@ public:
     n = word.size();
 
     for (int i = 0; i< n; i++){
-            if(isupper(word[i])){
+            if(isupper(word[i])) {
                 upper++;
             }else{
                 lower++;
