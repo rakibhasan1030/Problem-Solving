@@ -17,7 +17,7 @@ public:
     if (upper == n || lower == n){
          ans = true;
     }else {
-        if (upper == 1 && isupper(word[0])){
+        if (upper == 1 && isupper(word[0])) {
             ans = true;
         }else{
             ans = false;
