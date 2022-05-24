@@ -19,7 +19,7 @@ public:
     }else {
         if (upper == 1 && isupper(word[0])) {
             ans = true;
-        }else{
+        } else {
             ans = false;
         }
     }
