@@ -13,7 +13,7 @@ public:
                     t[0] == 'e' || t[0] == 'E' ||
                     t[0] == 'i' || t[0] == 'I' ||
                     t[0] == 'o' || t[0] == 'O' ||
-                    t[0] == 'u' || t[0] == 'U'){
+                    t[0] == 'u' || t[0] == 'U') {
                 int tempSpace = space;
                 t += "ma";
                 while(tempSpace){
