@@ -16,7 +16,7 @@ public:
                     t[0] == 'u' || t[0] == 'U') {
                 int tempSpace = space;
                 t += "ma";
-                while(tempSpace){
+                while(tempSpace) {
                     t += "a";
                     tempSpace--;
                 }
