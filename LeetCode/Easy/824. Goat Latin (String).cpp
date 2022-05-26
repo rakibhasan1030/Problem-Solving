@@ -5,7 +5,7 @@ public:
     string toGoatLatin(string sentence) {
     string t = "", result;
     int space = 0;
-    for(int i = 0; i <= sentence.size(); i++){
+    for(int i = 0; i <= sentence.size(); i++) {
         if (isspace(sentence[i]) || sentence[i] == '\0') {
             space++;
 
