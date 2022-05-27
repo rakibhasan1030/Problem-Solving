@@ -42,7 +42,7 @@ public:
                     temp += "a";
                     tempSpace--;
                 }
-                if (space != 1){
+                if (space != 1) {
                     result += " " + temp;
                 }else result += temp;
                 temp = "";
