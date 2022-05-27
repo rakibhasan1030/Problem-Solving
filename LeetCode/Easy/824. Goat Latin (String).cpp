@@ -24,7 +24,7 @@ public:
                     result += " " +  t;
                 } else result += t;
 
-            }else{
+            }else {
                 string temp;
                 char firstValue;
 
