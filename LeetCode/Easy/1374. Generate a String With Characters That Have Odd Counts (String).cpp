@@ -6,7 +6,7 @@ public:
         
     string ans = "";
     if(n%2==0){
-        for(int j = 0; j<n-1; j++){
+        for(int j = 0; j<n-1; j++) {
             ans.push_back('a');
         }
        ans.push_back('b');
