@@ -11,7 +11,7 @@ public:
         }
        ans.push_back('b');
     }else{
-        for(int j = 0; j<n; j++){
+        for(int j = 0; j<n; j++) {
             ans.push_back('a');
         }
     }
