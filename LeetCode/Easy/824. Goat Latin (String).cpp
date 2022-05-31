@@ -44,7 +44,7 @@ public:
                 }
                 if (space != 1) {
                     result += " " + temp;
-                }else result += temp;
+                } else result += temp;
                 temp = "";
             }
             t = "";
