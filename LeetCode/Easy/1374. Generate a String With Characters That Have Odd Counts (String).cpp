@@ -10,7 +10,7 @@ public:
             ans.push_back('a');
         }
        ans.push_back('b');
-    }else{
+    } else{
         for(int j = 0; j<n; j++) {
             ans.push_back('a');
         }
