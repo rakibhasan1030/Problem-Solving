@@ -25,7 +25,8 @@ if __name__ == '__main__':
             for i in marks:
                 a += i
             res = a/3
-            print("%.2f" % res)
+            # formate (value, ".2f")
+            print(format(res, ".2f"))
 
         query_name = input()
         avrg_marks(query_name)
