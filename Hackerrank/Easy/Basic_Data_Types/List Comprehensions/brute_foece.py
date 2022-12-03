@@ -8,7 +8,6 @@ if __name__ == '__main__':
     for i in range(x+1):
         for j in range(y+1):
             for k in range(z+1):
-                if (x+y+z) != n:
-                    res.append(i, j , k)
-    
+                if (i+j+k) != n:
+                    res.append([i, j, k])
     print(res)
